@@ -1,0 +1,49 @@
+.custom-order-form {
+	.shop_table {
+		width: 100%;
+		background-color: #fff;
+	}
+	.cart-subtotal {
+		font-size: 1em;
+	}
+	thead,
+	tbody,
+	tfoot {
+		text-align: left;
+		border-bottom: 0.15em solid #ddd;
+		th,
+		td {
+			padding: 0.5em;
+		}
+		.product-name,
+		.product-total {
+			width: 50%;
+		}
+		.product-name {
+			border-right: 0.1em solid #ddd;
+		}
+	}
+	tfoot {
+		.cart-subtotal {
+			border-bottom: 0.15em solid #ddd;
+		}
+		.shipping {
+			border-top: 0.15em solid #ddd;
+			display: block;
+			background-color: #efefef;
+			width: 201%;
+			border-right: 0.1em solid #ddd;
+			th,
+			td {
+				display: block;
+				width: 100%;
+			}
+			ul,
+			li {
+				width: 100%;
+				background-color: #efefef;
+				background-image: none;
+			}
+		}
+	}
+}

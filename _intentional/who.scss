@@ -1,0 +1,46 @@
+.who-section {
+	background: $dark-gray url(_i/intent-who.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 2em 0;
+	color: #fff;
+	.section-header {
+		svg {
+			fill: $red;
+		}
+		h2 {
+			color: #fff;
+		}
+	}
+	.three-list {
+		li {
+			width: 65%;
+			margin: 0 auto;
+			padding: 1.5em 0;
+			@include bp(44) {
+				float: left;
+				width: 30%;
+				margin: 0 5% 1em 0;
+				padding: 0;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			img {
+				padding-bottom: 1em;
+			}
+		}
+	}
+}
+.who-list {
+	text-align: center;
+	span {
+		color: $blue;
+		cursor: pointer;
+	}
+}
+.quote-section {
+	padding: 1em 0;
+	ul {
+		margin: 0;
+	}
+}

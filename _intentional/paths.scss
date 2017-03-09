@@ -1,0 +1,154 @@
+.site-content {
+	margin-top: 3.25em;
+	overflow: hidden;
+	z-index: 25;
+}
+.main-content {
+	overflow: hidden;
+	z-index: 25;
+	position: relative;
+}
+.path {
+	position: absolute;
+	z-index: 2;
+	max-width: none;
+	top: 0;
+	bottom: 0;
+	@include bp(50) {
+		top: 20%;
+		bottom: auto;
+		left: auto;
+		max-width: 100%;
+	}
+	@include bp(62.5) {
+		top: auto;
+	}
+}
+.path-content {
+	position: relative;
+	.med-wrap,
+	.sm-wrap,
+	.wrap {
+		position: relative;
+		z-index: 3;
+	}
+}
+.intent-store {
+	.med-wrap {
+		z-index: 4;
+	}
+}
+
+/*
+.path-intent-store,
+.path-intent-quiz,
+.path-intent-video,
+.path-intent-why,
+.path-intent-who {
+	display: none;
+}
+
+.path-store {
+	.path-original {
+		display: none;
+	}
+	.path-intent-store {
+		display: block;
+	}
+}
+.path-quiz {
+	.path-store {
+		display: none;
+	}
+	.path-original {
+		display: none;
+	}
+	.path-intent-store {
+		display: none;
+	}
+	.path-intent-quiz {
+		display: block;
+	}
+}
+.path-video {
+	.path-store {
+		display: none;
+	}
+	.path-original {
+		display: none;
+	}
+	.path-intent-store {
+		display: none;
+	}
+	.path-intent-quiz {
+		display: none;
+	}
+	.path-intent-video {
+		display: block;
+	}
+}
+.path-why {
+	.path-store {
+		display: none;
+	}
+	.path-original {
+		display: none;
+	}
+	.path-intent-store {
+		display: none;
+	}
+	.path-intent-quiz {
+		display: none;
+	}
+	.path-intent-video {
+		display: none;
+	}
+	.path-intent-why {
+		display: block;
+	}
+}
+.path-who {
+	.path-store {
+		display: none;
+	}
+	.path-original {
+		display: none;
+	}
+	.path-intent-store {
+		display: none;
+	}
+	.path-intent-quiz {
+		display: none;
+	}
+	.path-intent-video {
+		display: none;
+	}
+	.path-intent-why {
+		display: none;
+	}
+	.path-intent-who {
+		display: block;
+	}
+}*/
+
+/*.intent-store {
+	position: relative;
+	background: url(_i/path-1.png) 2em bottom no-repeat;
+}
+.one {
+	bottom: 0;
+	left: 2em;
+	width: 30em;
+	z-index: 2;
+}
+.quiz {
+	background: $yellow url(_i/path-2.png) right top no-repeat;
+}
+.videos {
+	//background: $dark-gray url(_i/path-3.png) right top no-repeat;
+}
+.map-section {
+	.med-wrap {
+		background: url(_i/path-4.png) center top no-repeat
+	}
+}*/

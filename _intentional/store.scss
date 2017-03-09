@@ -1,0 +1,497 @@
+.intent-store {
+	.wrap {
+		width: 100%;
+	}
+	.med-wrap {
+		width: 92%;
+		margin: 0 auto;
+		@include bp(44) {
+			background: url(_i/intent-back.gif) top center no-repeat;
+			background-size: 100% auto;
+			padding: 0 4em 4em;
+			width: 100%;
+			max-width: 68em;
+		}
+	}
+}
+.bulk-details-form {
+	position: fixed;
+	background: rgba( 50, 50, 50, 0.9);
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 500ms ease-in-out;
+	&.visible {
+		z-index: 101;
+		visibility: visible;
+		opacity: 1;
+	}
+	.hide-me {
+		.ginput_container {
+			display: none;
+		}
+		.gfield_description {
+			margin-bottom: 1em;
+			font-size: 0.875em;
+			font-weight: bold;
+			@include bp(32) {
+				font-size: 1em;
+			}
+			@include bp(50) {
+				font-size: 1.25em;
+			}
+		}
+	}
+	.gform_wrapper,
+	.gforms_confirmation_message {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 90%;
+		margin: 0 auto;
+		transform: translate(-50%, -50%);
+		color: $dark-gray;
+		background: white;
+		padding: 2em;
+		@include bp(44) {
+			width: 50%;
+		}
+		.bulk-details-close,
+		.bulk-close {
+			cursor: pointer;
+			color: white;
+			padding: 0.25em 0.75em;
+			background: $red;
+			position: absolute;
+			right: -1.5em;
+			top: -1.5em;
+			font-size: 0.75em;
+		}
+	}
+	.gform_confirmation_wrapper {
+		background: $blue;
+		color: white;
+		text-align: center;
+		padding: 1em;
+		margin: 1em auto;
+	}
+	.gform_fields {
+		margin: 0;
+		padding: 0;
+		li {
+			position: relative;
+			list-style: none;
+			input,
+			textarea {
+			   width: 100%;
+				padding: 0.5em;
+				font-size: 0.9em;
+				outline: none;
+				margin: 0.5em auto;
+				border-radius: 0 !important;
+				border: 1px solid lighten($dark-gray,25%);
+			}
+			.name_first input,
+			.name_last input {
+				width: 47.5%;
+				float: left;
+			}
+			.name_first input {
+				margin-right: 5%;
+			}
+		}
+	}
+	.gfield_label {
+		display: none !important;
+	}
+	.ginput_complex {
+		label {
+		   display: none !important;
+		}
+	}
+	.gform_button {
+		display: block !important;
+		margin: 1.5em auto 0;
+		background-color: $blue;
+		border: 1px solid $blue;
+		color: white;
+		width: 10em;
+		padding: 0.75em 0;
+		font-size: 0.875em;
+		transition: all 500ms ease-in-out;
+		&:hover {
+			background-color: darken( $blue , 10% );
+			border-color: darken( $blue , 10% );
+		}
+	}
+	.gform_footer {
+		position: relative;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}
+.product-options {
+	padding: 1em 0 0;
+	> div {
+		margin-bottom: 2em;
+		position: relative;
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1.75em;
+		}
+		@include bp(30) {
+			float: left;
+			width: 50%;
+			margin: 0;
+			padding: 0 1em 3em;
+			clear: none;
+		}
+		@include bp(50) {
+			width: 25%;
+			padding: 0 1em;
+		}
+	}
+	.btn {
+		display: block;
+		width: 85%;
+		margin: 0 auto;
+		clear: both;
+	}
+}
+.option-main {
+	h3 {
+		text-transform: uppercase;
+	}
+	img {
+		display: block;
+	}
+}
+.option-details {
+	background: $text;
+	color: #fff;
+	padding: 1em;
+	font-size: 0.8125em;
+	font-weight: bold;
+	hr {
+		background: lighten($dark-gray, 20%);
+	}
+	h4 {
+		text-transform: uppercase;
+		margin: 0 0 0.25em;
+	}
+	p {
+		margin: 0;
+	}
+	
+		
+}
+@include bp(50) {
+	.option-details {
+		background: $text url(_i/intent-mountain.jpg) no-repeat;
+	}
+	.option-free {
+		.option-details {
+			background-position: 5% 80%;
+			background-size: 400%;
+		}
+		b {
+			font-size: 1.1em;
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+	}
+	.option-individual {
+		.option-details {
+			background-position: 35% 80%;
+			background-size: 400%;
+		}
+	}
+	.option-bundle {
+		.option-details {
+			background-position: 65% 80%;
+			background-size: 400%;
+		}
+	}
+	.option-church {
+		.option-details {
+			background-position: 85% 80%;
+			background-size: 400%;
+		}
+	}
+}
+.pricing {
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	margin: 0 0 1em;
+	span {
+		@include bp(50) {
+			&:first-of-type {
+				margin-right: 1em;
+			}
+		}
+	}
+	@include bp(50) {
+		margin: 0.7em 0;
+		font-size: 1.4em;
+	}
+}
+/**Individual**/
+.option-individual,
+.option-bundle,
+.option-church,
+.option-free {
+	.option-main {
+		/*float: left;
+		width: 35%;
+		padding: 0 1em 0 0;*/
+		margin: 0 auto;
+		max-width: 14em;
+		padding-bottom: 1.5em;
+		@include bp(50) {
+			float: none;
+			width: 100%;
+			padding: 0 1em 0 0;
+		}
+	}
+	.option-details {
+		/*float: right;
+		width: 65%;
+		margin: 0 0 1em;*/
+		margin: 0 auto;
+		width: 85%;
+		@include bp(50) {
+			float: none;
+			width: 100%;
+			//display: none;
+		}
+		span {
+			color: $blue;
+			cursor: pointer;
+		}
+	}
+	.pricing {
+		/*float: left;
+		width: 35%;
+		padding: 0 1em 0 0;
+		clear: left;*/
+		margin: 0 auto;
+		width: 85%;
+		padding: 0.875em 0;
+		@include bp(50) {
+			float: none;
+			width: 100%;
+			padding: 0;
+			margin: 0.7em 0;
+		}
+		span {
+			display: block;
+			@include bp(50) {
+				display: inline-block;
+			}
+		}
+	}
+	input {
+		outline: none;
+	}
+}
+.option-individual .option-cart {
+	.variations {
+	   display: none;
+	}
+	.single_variation .price {
+		display: none;
+	}
+}
+/*Free Option*/
+.option-free {
+	> p {
+		font-size: 0.8125em;
+		clear: both;
+		width: 85%;
+		margin: 0 auto;
+		padding: 0.8em 0;
+		text-align: center;
+	}
+	form {
+		position: relative;
+	}
+	.validation_error {
+		position: absolute;
+		bottom: -4em;
+		width: 20em;
+		font-size: 0.8em;
+		color: $red;
+	}
+	.validation_message {
+		display: none;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		label,
+		input {
+			font-size: 0.9em;
+		}
+		label {
+			position: absolute;
+			color: #aaa;
+			top: 0.45em;
+			left: 0.5em;
+		}
+		input {
+			&[type="email"],
+			&[type="text"] {
+				display: block;
+				width: 100%;
+				border: 1px solid $red;
+				padding: 0.6em 0.5em;
+				line-height: 1;
+			}
+			
+		}
+	}
+	input {
+		&[type="submit"] {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			background: $red;
+			color: #fff;
+			border: 0;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			&:hover {
+				background: darken($red, 10%);
+			}
+		}
+	}
+}
+
+/**Dropdown**/
+.option-dropdown {
+	display: none;
+	background: white;
+	padding: 0.5em 0.5em 0;
+	border: 1px solid #bfbebe;
+	position: relative;
+	z-index: 1;
+	@include bp(50) {
+		background: transparentize(#fff, 0.1);
+		position: absolute;
+		top: 100%;
+		left: 1em;
+		right: 1em;
+		z-index: 1000;
+		perspective: none;
+	}
+	h3 {
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 0 0.25em;
+	}
+	.product-price {
+		float: right;
+		font-size: 0.9375em;
+	}
+	.quantity {
+		margin: 0 0 0.5em;
+		padding: 0;
+		input[type="button"] {
+			@include button(#aaa, #fff);
+			display: block;
+			width: 25%;
+			float: left;
+			padding: 0 0.25em;
+			font-size: 2em;
+			line-height: 1;
+		}
+		input[type="number"] {
+			float: left;
+			display: block;
+			width: 44%;
+			margin: 0 3%;
+			font-size: 1.25em;
+			text-align: center;
+			padding: 0.15em 0.5em;
+			border: 1px solid #aaa;
+			line-height: 1;
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	button {
+		@include button($blue, #fff);
+		border: 0;
+		display: block;
+		width: 100%;
+		margin: 0 0 1.5em;
+	}
+}
+/**Flipper**/
+.intent-store {
+	@include bp(50) {
+		/* entire container, keeps perspective */
+		.flip-container {
+			perspective: 1000;
+		}
+			/* flip the pane when hovered */
+			.flip-container:hover .flipper, .flip-container.hover .flipper {
+				transform: rotateY(180deg);
+			}
+
+		.flip-container, .front, .back {
+			/*width: 320px;
+			height: 480px;*/
+		}
+
+		/* flip speed goes here */
+		.flipper {
+			transition: 0.6s;
+			transform-style: preserve-3d;
+			position: relative;
+			padding-bottom: 16em;
+		}
+
+		/* hide back of pane during swap */
+		.front, .back {
+			backface-visibility: hidden;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		/* front pane, placed above back */
+		.front {
+			z-index: 2;
+			/* for firefox 31 */
+			transform: rotateY(0deg);
+		}
+
+		/* back, initially hidden pane */
+		.back {
+			transform: rotateY(180deg);
+			bottom: 0;
+		}
+	}
+}
+.intent-email {
+   width: 85%;
+   margin: 0 auto;
+   @include bp(50) {
+   	width: 100%;
+   }
+}

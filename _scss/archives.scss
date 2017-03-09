@@ -1,0 +1,98 @@
+.content-section.archive {
+	padding: 2em 0;
+}
+.no-results {
+	padding: 0 2em;
+}
+.archive-title {
+	padding: 0 2em;
+	display: none;
+}
+.archive-more {
+	@include button($blue, #fff, $blue);
+}
+.families-content .archive {
+	.entry-excerpt {
+		border-color: #ddd;
+		&:last-of-type {
+			border: 0;
+		}
+	}
+	.archive-more {
+		@include button($family, #fff, $family);
+	}
+	.entry-title {
+		color: $new-blue;
+	}
+}
+.church-content .archive {
+	.entry-excerpt {
+		border-color: $church;
+		&:last-of-type {
+			border: 0;
+		}
+	}
+	.archive-more {
+		@include button($church, #fff, $church);
+	}
+}
+.archive {
+	.entry-excerpt {
+		padding: 2em 0;
+		border-bottom: 0.25em solid $blue;
+		&.half {
+			border: 0 !important;
+		}
+	}
+	.entry-author {
+		font-size: 0.75em;
+	}
+	.entry-title, .entry-title a {
+		color: $new-teal;
+	}
+}
+.archive-grouping {
+	border-bottom: 0.25em solid $blue;
+	.entry-excerpt {
+		padding: 0 0 2em;
+	}
+	.half {
+		@include bp(44) {
+			width: 50%;
+		}
+		&:nth-child(odd) {
+			clear:left;
+		}
+	}
+}
+.families-content {
+	.archive-grouping {
+		border-color: $family
+	}
+	.entry-meta {
+		a {
+			color: $new-blue;
+		}
+	}
+}
+.church-content {
+	.archive-grouping {
+		border-color: $church;
+	}
+}
+.search-results {
+	article {
+		margin-bottom: 2em;
+	}
+}
+.paging-navigation {
+	clear: both;
+}
+.content-section.blog-archive {
+	padding-top: 0;
+}
+.blog-banner {
+	img {
+		display: block;
+	}
+}

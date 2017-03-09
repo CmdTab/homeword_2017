@@ -1,0 +1,148 @@
+.quiz {
+	background: $yellow;
+	padding: 2em 0;
+	.section-header {
+		h2 {
+			font-size: 2em;
+			@include bp(44) {
+				font-size: 3em;
+			}
+		}
+		p {
+			color: $dark-gray;
+		}
+	}
+}
+.quiz-form {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	.gform_body {
+		font-size: 1.3em;
+		padding-top: 0.875em;
+	}
+	.gform_fields {
+		margin: 0.5em 0;
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	.gfield {
+		display: block;
+		@include bp(44) {
+			float: left;
+			width: 65%;
+		}
+	}
+	.gfield_html {
+		display: none;
+		@include bp(44) {
+			display: block;
+			float: left;
+			width: 35%;
+			margin: -2em 0 0;
+			img {
+				display: block;
+				padding-top: 2em;
+			}
+		}
+	}
+	.gf_page_steps {
+		text-align: center;
+		@include bp(44) {
+			width: 65%;
+		}
+	}
+	.gf_step {
+		display: inline-block;
+		font-size: 0.875em;
+	}
+	.gf_step_number {
+		display: inline-block;
+		background: #fff;
+		padding: 0.75em 1em;
+		line-height: 1;
+	}
+	.gf_step_active {
+		.gf_step_number {
+			background: $blue;
+			color: #fff;
+		}
+	}
+	.gfield_radio {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: 0.8em;
+		input {
+			margin-right: 0.5em;
+		}
+	}
+	.gform_page_footer {
+		text-align: center;
+		input {
+			background: $blue;
+			color: #fff;
+			padding: 0.25em 1em;
+			border: 0;
+		}
+		@include bp(44) {
+			width: 65%;
+		}
+	}
+	.validation_message {
+		background: $red;
+		color: #fff;
+		font-size: 0.8125em;
+		text-align: center;
+		padding: 0.15em 1em;
+	}
+	.validation_error {
+		display: none;
+	}
+}
+.gform_anchor {
+	position: absolute;
+	top: -115%;
+}
+.quiz-confirmation {
+	text-align: center;
+	padding-bottom: 2em;
+	br {
+		display: none;
+	}
+	img {
+		max-width: 14em;
+	}
+	.first-header {
+		padding-bottom: 0.25em;
+	} 
+	h2 {
+		text-transform: uppercase;
+		font-size: 2em;
+		margin: 0;
+	}
+	span {
+		color: white;
+	}
+	p {
+		margin: 0;
+		font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	}
+	.share-social {
+		font-family: 'Open Sans Condensed', sans-serif;
+		display: inline-block;
+		padding-right: 0.5em;
+		padding-top: 1em;
+	}
+	a {
+		padding-right: 0.5em;
+	}
+}
+.fb_iframe_widget {
+	position: absolute !important;
+	right: 19%;
+	bottom: 2.35em;
+	display: none !important;
+}

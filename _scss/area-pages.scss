@@ -1,0 +1,86 @@
+.families-content {
+	h1, h3 {
+		color: $family;
+		a {
+			color: $family;
+		}
+	}
+	.current-menu-item {
+		a {
+			color: $family !important;
+		}
+	}
+}
+.church-content {
+	h1, h3 {
+		color: $church;
+		a {
+			color: $church;
+		}
+	}
+	.current-menu-item {
+		a {
+			color: $church !important;
+		}
+	}
+}
+.content-section {
+	h1 {
+		font-weight: normal;
+		font-size: 2.875em;
+		&:first-of-type {
+			margin-top: 0.35em;
+		}
+	}
+	h3 {
+		margin-bottom: 0.25em;
+	}
+	h5 {
+		color: $new-blue;
+		text-transform: uppercase;
+		margin-top: 0;
+		font-size: 1.15em;
+	}
+}
+.section-intro {
+	margin-bottom: 2em;
+}
+.radio-intro {
+	padding: 0 2em;
+	h1 {
+		color: $radio;
+	}
+}
+.metadata {
+	font-size: 0.75em;
+	text-transform: uppercase;
+}
+.entry-excerpt {
+	padding: 1.5em 0;
+	p {
+		font-size: 0.875em;
+	}
+	h3 a {
+		color: $new-lt-blue;
+		font-size: 1.35em;
+	}
+	h5 {
+		margin-bottom: 1.25em;
+	}
+	img {
+		margin-bottom: 1em;
+	}
+	.read-more {
+		color: $new-dark-blue;
+	}
+	.metadata {
+		font-size: 0.875em;
+	}
+}
+.devo-excerpt {
+	border-bottom: 0.15em solid $new-teal;
+	margin-bottom: 2em;
+}
+.excerpt-group {
+	//border-bottom: 1px solid #ccc;
+}
