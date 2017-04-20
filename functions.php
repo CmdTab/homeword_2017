@@ -513,6 +513,15 @@ function wc_reg_author_menus( $register, $name = '' ) {
 
 }
 
+/*Make hidden pages show with one page checkout*/
+add_filter( 'wcopc_products_query_args', 'wc_opc_show_hidden_products' );
+function wc_opc_show_hidden_products( $args ) {
+    if ( isset( $args['meta_query'] ) ) {
+        array_push( $args['meta_query'][0]['value'], 'hidden' );
+    }
+    return $args;
+}
+
 /*Custom Post Type Archive*/
 function namespace_add_custom_types( $query ) {
   if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
@@ -563,20 +572,27 @@ function searchAll( $query ) {
 add_filter( 'the_search_query', 'searchAll' );
 //Function to add featured image in RSS feeds
 add_image_size( 'email-thumb', 230, 230 );
+add_image_size( 'jims-image' , 600, 600);
 function featured_image_in_rss($content)
 {
     // Global $post variable
     global $post;
     // Check if the post has a featured image
-    if (has_post_thumbnail($post->ID))
-    {
-        $content = get_the_post_thumbnail($post->ID, 'large') .'<br/>'. $content;
-    }
+    if ( get_post_type( get_the_ID() ) == 'jims-blog' and has_post_thumbnail($post->ID) ) {
+
+		$content = get_the_post_thumbnail($post->ID, 'jims-image') .'<br/>'. $content;
+
+	} else {
+
+		$content = get_the_post_thumbnail($post->ID, 'email-thumb') .'<br/>'. $content;
+
+	}
     return $content;
 }
 
 //Add the filter for RSS feeds Excerpt
 add_filter('the_excerpt_rss', 'featured_image_in_rss');
+
 //Add the filter for RSS feed content
 add_filter('the_content_feed', 'featured_image_in_rss');
 
@@ -594,3 +610,39 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
+
+
+
+/** ALL OF THE ONE PAGE CHECKOUT DONATION SCRIPTS FROM LOTE **/
+
+/*Add class to body of donation pages*/
+function donation_classes( $classes ) {
+	if(is_wcopc_checkout()) {
+		$cartProduct = get_field('donation_product', 'option');
+		$recurringProduct = get_field('recurring_product', 'option');
+		global $post;
+		$place = stripos( $post->post_content, 'product_ids="');
+		$shortcode = substr($post->post_content, $place);
+		$shortcode_array = explode('"', $shortcode);
+		$product_ID = $shortcode_array[1];
+		//Does that product belong in the videos group?
+		if($product_ID == $cartProduct) {
+			$classes[] = 'one-time-donation';
+		} elseif($product_ID == $recurringProduct) {
+			$classes[] = 'recurring-donation';
+		}
+	}
+	return $classes;
+}
+add_filter( 'body_class','donation_classes' );
+
+function woo_donate_cart_button_text() {
+        //return __( 'Add to Order', 'woocommerce' );
+}
+
+/*JS for One page checkout*/
+if (  function_exists( 'is_wcopc_checkout' ) ) {
+	if(is_wcopc_checkout()) {
+		wp_enqueue_script( 'donate', get_template_directory_uri() . '/_js/donation-min.js', array('jquery'),'', true );
+	}
+}

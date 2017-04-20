@@ -130,6 +130,7 @@
 		</footer><!-- #colophon -->
 	</div><!-- site-content -->
 </div><!--site-->
+<div class="modalVideo"><div class="modalContent"></div><a href = "#" class="hideModal">Close</a></div>
 <?php wp_footer(); ?>
 <!--<script src="//localhost:35729/livereload.js"></script>-->
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/_js/production.min.js"></script>

@@ -111,6 +111,7 @@ function tabLabels() {
 		return false;
 	});
 }*/
+
 function otherAmount() {
 	jQuery('.other-amount input').focus(function() {
 		jQuery('.donate-amounts input').prop('checked', false);
@@ -120,6 +121,49 @@ function otherAmount() {
 	});
 }
 
+function autoAddCart() {
+    jQuery('.wcopc .single_add_to_cart_button, .opc-complete-order').click(function() {
+        jQuery('body').addClass('show-checkout');
+        jQuery('#customer_details, .review-order-container, #wc_checkout_add_ons, .custom-addon-value').slideDown();
+        jQuery('#opc-messages').hide();
+        jQuery(window).resize();
+    });
+}
+//Show checkout fields if cart not empty
+function showCheckoutFields() {
+    var checkoutData = Cookies.getJSON('woocommerce_items_in_cart');
+    //console.log(checkoutData);
+    if(checkoutData) {
+        jQuery('#customer_details, .review-order-container, #wc_checkout_add_ons, .custom-addon-value').slideDown();
+    }
+}
+function couponButton() {
+    jQuery('#coupon-button').click(function() {
+        jQuery( ".checkout_coupon .form-row-first" ).append( "<a href = '#' class='close-coupon'>&times</a>" );
+        jQuery('.returning-customer').addClass('show-offer');
+        return false;
+    });
+}
+function closeCouponModal() {
+    jQuery( ".checkout_coupon" ).submit(function( event ) {
+        jQuery('.returning-customer').removeClass('show-offer');
+        //alert('did this work');
+    });
+    jQuery('.checkout_coupon').on('click', '.close-coupon', function() {
+        jQuery('.returning-customer').removeClass('show-offer');
+        return false;
+    });
+}
+
+function cartDonation() {
+	jQuery('.cart-donation .variations input[name="attribute_suggested-amounts"]').change(function() {
+		if(jQuery(this).val() == 'Other') {
+			jQuery('.cart-donation .nyp').css('display','block');
+		} else {
+			jQuery('.cart-donation .nyp').css('display','none');
+		}
+	});
+}
 jQuery(document).ready(function() {
 	//var vw = jQuery(window).width();
 	navDropdown();
@@ -133,7 +177,10 @@ jQuery(document).ready(function() {
 	tabLabels();
 	//stockGift();
 	otherAmount();
-
+	showCheckoutFields();
+    couponButton();
+    closeCouponModal();
+	cartDonation();
 });
 jQuery(window).load(function() {
 	var vw = jQuery(window).width();
@@ -141,6 +188,7 @@ jQuery(window).load(function() {
 		sidebarHeight();
 		//cartHeights();
 	}
+	autoAddCart();
 });
 
 jQuery(window).resize(function() {

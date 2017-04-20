@@ -13,7 +13,7 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 2.6.1
+ * @version 3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -27,6 +27,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
+
 <li <?php post_class(); ?>>
 	<?php
 		/**
@@ -50,36 +51,36 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	?>
 
 	<h4><?php echo $entryTitle; ?></h4>
-	
+
 	<?php
 			$author = get_post_meta( get_the_ID(), '_author_field', true );
 			if(!empty($author)) :
 		?>
 			<span class="product-author-list">by <?php echo $author ?></span>
 	<?php endif; ?>
-
 	<?php
-		/**
-		 * woocommerce_shop_loop_item_title hook.
-		 *
-		 * @hooked woocommerce_template_loop_product_title - 10
-		 */
-			//do_action( 'woocommerce_shop_loop_item_title' );
 
-		/**
-		 * woocommerce_after_shop_loop_item_title hook.
-		 *
-		 * @hooked woocommerce_template_loop_rating - 5
-		 * @hooked woocommerce_template_loop_price - 10
-		 */
-		 do_action( 'woocommerce_after_shop_loop_item_title' );
+	/**
+	 * woocommerce_shop_loop_item_title hook.
+	 *
+	 * @hooked woocommerce_template_loop_product_title - 10
+	 */
+	//do_action( 'woocommerce_shop_loop_item_title' );
 
-		/**
-		 * woocommerce_after_shop_loop_item hook.
-		 *
-		 * @hooked woocommerce_template_loop_product_link_close - 5
-		 * @hooked woocommerce_template_loop_add_to_cart - 10
-		 */
-		do_action( 'woocommerce_after_shop_loop_item' );
+	/**
+	 * woocommerce_after_shop_loop_item_title hook.
+	 *
+	 * @hooked woocommerce_template_loop_rating - 5
+	 * @hooked woocommerce_template_loop_price - 10
+	 */
+	do_action( 'woocommerce_after_shop_loop_item_title' );
+
+	/**
+	 * woocommerce_after_shop_loop_item hook.
+	 *
+	 * @hooked woocommerce_template_loop_product_link_close - 5
+	 * @hooked woocommerce_template_loop_add_to_cart - 10
+	 */
+	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
 </li>

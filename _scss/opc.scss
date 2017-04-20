@@ -1,0 +1,397 @@
+.nyp-product {
+	.price,
+	.stock,
+	.woocommerce-tabs,
+	.single-product-meta,
+	.product_meta {
+		display: none;
+	}
+	form.cart {
+		.variations {
+			background: none !important;
+			border: 0 !important;
+		}
+	}
+    .variations {
+		margin: 0 0 1em;
+
+        .label {
+            display: none;
+        }
+        .value {
+            > div {
+                display: inline-block;
+				margin: 0 0.5em 1em 0;
+				input[type="radio"] {
+					position: absolute;
+					opacity: 0;
+					visibility: hidden;
+					&:checked + label {
+						background: $green;
+						color: #fff;
+					}
+				}
+				label {
+					padding: 0.5em 1em;
+					border: 1px solid $green;
+					border-radius: 0.25em;
+					color: $green;
+				}
+            }
+        }
+    }
+	.woocommerce-variation-description {
+		p {
+			&:before {
+				content: 'Your Donation: ';
+				font-weight: bold;
+			}
+		}
+	}
+	.single_add_to_cart_button {
+		background: $blue !important;
+		padding: 1em 2em !important;
+	}
+
+}
+td.product-name dl.variation dt.variation-SuggestedAmounts,
+td.product-name dl.variation dd.variation-SuggestedAmounts {
+	display: none;
+}
+.wcopc {
+	width: 100%;
+	.images {
+		@include bp(44) {
+			float: left;
+			width: 49%;
+			margin-right: 2%;
+		}
+		img {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+	.product-item {
+		@include bp(44) {
+			float: left;
+			width: 49%;
+		}
+	}
+	.woocommerce-message {
+		display: none !important;
+	}
+	button.button.alt {
+		background-color: $blue;
+		border: 1px solid $blue;
+		color: #fff !important;
+		padding: 1em 2em !important;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.875em;
+		&:hover {
+			background: darken($blue, 10%);
+		}
+	}
+	.product_meta {
+		display: none;
+	}
+	.shopping-steps {
+		display: none;
+	}
+
+	#customer_details,
+	.review-order-container,
+	#wc_checkout_add_ons,
+	.custom-addon-value {
+		display: none;
+	}
+	.donation-modal,
+	.custom-addon-value {
+		//display: none;
+	}
+	.product {
+		.price {
+			color: darken($gray-text,25%) !important;
+			margin: 0 0 0.75em;
+			line-height: 1.2;
+			> .woocommerce-Price-amount {
+				color: $text;
+				font-weight: 700;
+			}
+			ins {
+				font-weight: 700 !important;
+				color: $blue;
+				text-decoration: none !important;
+			}
+		}
+		.onsale {
+			background-color: $blue;
+    		min-width: 3.75em;
+			right: 4.75em !important;
+			left: auto !important;
+			top: 0.75em !important;
+			font-size: 0.875em;
+			@include bp(44) {
+				font-size: 0.65em;
+				right: -1em !important;
+			}
+			@include bp(62.5) {
+				left: -1.75em !important;
+				right: auto !important;
+				top: -1em !important;
+			}
+		}
+		.product_title {
+			margin-bottom: 0;
+		}
+		h5 {
+			color: $gray-text;
+			font-weight: normal;
+		}
+	}
+	.summary {
+		position: relative;
+		p {
+			font-size: 0.875em;
+			&:last-child {
+				margin-bottom: 2.5em;
+			}
+		}
+		.product_meta {
+			display: none;
+		}
+		.onsale {
+			left: auto !important;
+			right: 1em !important;
+			top: -4em !important;
+			font-size: 0.875em !important;
+			@include bp(50) {
+				right: 0 !important;
+			}
+			@include bp(62.5) {
+				right: 1em !important;
+			}
+		}
+		.price {
+			font-size: 2.5em !important;
+			color: $green !important;
+		}
+	}
+	.btn {
+		@include button($blue, #fff, $blue);
+		&:hover {
+			background-color: darken($blue,10%);
+			color: #fff;
+		}
+	}
+	.outline-btn {
+		@include button(transparent, $blue, $blue);
+		&:hover {
+			background-color: $blue;
+			color: #fff;
+		}
+	}
+}
+
+.selected .wc-south {
+	display: block !important;
+	margin: 1em 0 0 !important;
+	clear: left;
+}
+.opc-video {
+	background: #fff;
+	@include bp(50) {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 52%;
+		z-index: 10;
+	}
+}
+.recurring-donation,
+.one-time-donation,
+.page-id-104,
+.page-id-136 {
+	/*.images {
+		display: none !important;
+		@include bp(50) {
+			display: block !important;
+			visibility: hidden;
+		}
+	}*/
+	#wc_checkout_add_ons,
+	.custom-addon-value {
+		display: none !important;
+	}
+	.images {
+		display: none !important;
+		@include bp(50) {
+			display: block !important;
+		}
+	}
+}
+/*Virtual Code*/
+.offer-code.woocommerce {
+	.woocommerce-error,
+	.woocommerce-message {
+		margin: 0 auto 2em !important;
+		display: block !important;
+	}
+	.code-trigger {
+		display: none;
+	}
+	&.show-checkout {
+		.code-trigger {
+			display: block;
+			background: $blue;
+			color: #fff;
+			padding: 0.5em 1em;
+			font-size: 0.875em;
+			text-align: center;
+			margin: 1em auto;
+			p {
+				margin: 0;
+				font-weight: bold;
+				a {
+					font-weight: bold;
+					text-decoration: underline;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.returning-customer {
+		border: 0 !important;
+		margin: 0 !important;
+		.woocommerce-info {
+			background: $gray-text !important;
+			color: $black;
+			display: none;
+		}
+		&.show-offer {
+			.checkout_coupon {
+				opacity: 1;
+				visibility: visible;
+			}
+			.form-row {
+				visibility: visible;
+				display: block !important;
+			}
+		}
+	}
+	.checkout_coupon {
+		display: block !important;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		opacity: 0;
+		margin: 0 !important;
+		padding: 3em 0 !important;
+		background: #fff;
+		background: rgba(0,0,0,0.7);
+		transition: all 0.3s;
+
+		.form-row {
+			position: relative;
+			width: 50%;
+			max-width: 480px;
+			min-width: 280px;
+			height: auto;
+			z-index: 2000;
+			visibility: hidden;
+			backface-visibility: hidden;
+			background: #fff;
+			padding: 2em 1.5em 0;
+			border-radius: 0;
+			margin: 0 auto;
+			width: 100% !important;
+			&.form-row-first,
+			&.form-row-last {
+				margin: 0 auto !important;
+			}
+			&.form-row-last {
+				padding: 1em 1.5em 2em;
+			}
+
+		}
+		.close-coupon {
+			color: $gray-text;
+			position: absolute;
+			top: 0;
+			right: 0.25em;
+			text-decoration: none;
+			font-size: 1.5em;
+			line-height: 1;
+		}
+
+	}
+}
+.modal,
+.modalVideo {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: #fff;
+	background: rgba(249,249,249,0.7);
+	transition: all 0.3s;
+	&:before {
+		height:1em;width:1em;position:absolute;top:50%;left:50%;margin-left:-.5em;margin-top:-.5em;display:block;content:"";-webkit-animation:spin 1s ease-in-out infinite;-moz-animation:spin 1s ease-in-out infinite;animation:spin 1s ease-in-out infinite;background:url(../../plugins/woocommerce/assets/images/icons/loader.svg) center center;background-size:cover;line-height:1;text-align:center;font-size:2em;color:rgba(0,0,0,.75)
+	}
+	.modalContent {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 50%;
+		max-width: 630px;
+		min-width: 320px;
+		height: auto;
+		z-index: 2000;
+		visibility: hidden;
+		backface-visibility: hidden;
+		transform: translateX(-50%) translateY(-50%);
+
+		svg {
+			display: none;
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+			display:block;
+		}
+	}
+	&.showModal {
+		opacity: 1;
+		visibility: visible;
+		.modalContent {
+			visibility: visible;
+		}
+	}
+}
+.hideModal {
+	position: fixed;
+	bottom: 20%;
+	left: 50%;
+	text-align: center;
+	transform: translateX(-50%);
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: $text;
+	text-decoration: none;
+	z-index: 2001;
+}
+.opc-single-product {
+	.quantity input[type="number"] {
+		width: 3.5em;
+		height: 2.9em;
+		padding: 0 0 0 0.875em;
+	}
+}

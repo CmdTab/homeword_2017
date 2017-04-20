@@ -47,3 +47,12 @@
 		}
 	}
 }
+.woocommerce-checkout {
+	&.showModal {
+		opacity: 1;
+		visibility: visible;
+		.modalContent {
+			visibility: visible;
+		}
+	}
+}
