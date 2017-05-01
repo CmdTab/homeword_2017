@@ -119,7 +119,7 @@
 							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>/store">Store</a>
 						</li>
 						<li>
-							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>/donate">Donate</a>
+							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>/your-donation">Donate</a>
 						</li>
 					</ul>
 					<div class="copyright">

@@ -331,6 +331,10 @@ td.product-name dl.variation dd.variation-SuggestedAmounts {
 
 	}
 }
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
 .modal,
 .modalVideo {
 	position: fixed;
@@ -393,5 +397,38 @@ td.product-name dl.variation dd.variation-SuggestedAmounts {
 		width: 3.5em;
 		height: 2.9em;
 		padding: 0 0 0 0.875em;
+		text-align: right;
+	}
+	.nyp input.nyp-input {
+	    padding: 0.25em;
+	    width: 7.75em;
+	}
+	.product-quantity {
+		padding-top: 1em;
+		button[type="submit"] {
+			background-color: $yellow !important;
+			border-color: $yellow !important;
+			&:hover {
+				background-color: darken($yellow,10%) !important;
+				border-color: darken($yellow,10%) !important;
+			}
+		}
+		.variations {
+			.value>div label {
+				border-color: $blue;
+				color: $blue;
+				cursor: pointer;
+				&:hover {
+					background-color: $blue;
+					color: #fff;
+				}
+			}
+			.value>div input[type="radio"]:checked+label {
+				background-color: $blue;
+			}
+		}
+		.quantity.buttons_added {
+			display: none !important;
+		}
 	}
 }

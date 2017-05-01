@@ -54,6 +54,7 @@ function homeword_setup() {
 		'intentional' => __( 'Intentional Nav', 'homeword' ),
 		'download' => __( 'Download Nav', 'homeword' ),
 		'famnetwork' => __( 'Fam Network Nav', 'homeword' ),
+		'rym' => __( 'RYM', 'homeword' ),
 	) );
 	//Get variable at end of menu
 	add_filter( 'wp_nav_menu_objects', 'add_var', 10, 2 );

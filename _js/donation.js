@@ -15,7 +15,18 @@ function loadingModal () {
 		jQuery('.modalVideo').addClass('showModal');
 	});
 }
+
+function cartDonation() {
+	jQuery('.cart-donation .variations input[name="attribute_suggested-amounts"]').change(function() {
+		if(jQuery(this).val() == 'Other') {
+			jQuery('.cart-donation .nyp').slideDown();
+		} else {
+			jQuery('.cart-donation .nyp').slideUp();
+		}
+	});
+}
 jQuery(window).load(function() {
     autoAddCart();
 	loadingModal();
+	cartDonation();
 });

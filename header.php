@@ -99,12 +99,16 @@ $_SESSION['cat'] = $_GET['cat'];*/
 					--><li>
 						<a href = "<?php echo esc_url( home_url( '/' ) ); ?>store">Store</a>
 					</li><!--
-                    --><li>
-                        <a href = "http://famnetwork.homeword.com" id="fam-link" class="btn">Church Leaders</a>
-                    </li>
+                    --><li class="with-sub rym-nav">
+						<a href = "#">
+							RYM
+							<span aria-hidden="true" data-icon="&#x75;"></span>
+						</a>
+						<?php wp_nav_menu( array( 'theme_location' => 'rym', 'menu_class' => 'subnav', 'container' => false) ); ?>
+					</li>
 				</ul>
 				<div class="nav-buttons">
-					<a href = "<?php echo esc_url( home_url( '/' ) ); ?>donate" class="btn">Donate</a>
+					<a href = "<?php echo esc_url( home_url( '/' ) ); ?>your-donation" class="btn">Donate</a>
 					<?php global $woocommerce; ?>
 					<?php //if ($woocommerce->cart->cart_contents_count>0) :?>
 						<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
