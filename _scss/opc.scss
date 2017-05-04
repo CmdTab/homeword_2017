@@ -331,9 +331,33 @@ td.product-name dl.variation dd.variation-SuggestedAmounts {
 
 	}
 }
+<<<<<<< HEAD
 .woocommerce-checkout {
 	.modal,
 	.modalVideo {
+=======
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.modal,
+.modalVideo {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: #fff;
+	background: rgba(249,249,249,0.7);
+	transition: all 0.3s;
+	&:before {
+		height:1em;width:1em;position:absolute;top:50%;left:50%;margin-left:-.5em;margin-top:-.5em;display:block;content:"";-webkit-animation:spin 1s ease-in-out infinite;-moz-animation:spin 1s ease-in-out infinite;animation:spin 1s ease-in-out infinite;background:url(../../plugins/woocommerce/assets/images/icons/loader.svg) center center;background-size:cover;line-height:1;text-align:center;font-size:2em;color:rgba(0,0,0,.75)
+	}
+	.modalContent {
+>>>>>>> origin/master
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -395,5 +419,38 @@ td.product-name dl.variation dd.variation-SuggestedAmounts {
 		width: 3.5em;
 		height: 2.9em;
 		padding: 0 0 0 0.875em;
+		text-align: right;
+	}
+	.nyp input.nyp-input {
+	    padding: 0.25em;
+	    width: 7.75em;
+	}
+	.product-quantity {
+		padding-top: 1em;
+		button[type="submit"] {
+			background-color: $yellow !important;
+			border-color: $yellow !important;
+			&:hover {
+				background-color: darken($yellow,10%) !important;
+				border-color: darken($yellow,10%) !important;
+			}
+		}
+		.variations {
+			.value>div label {
+				border-color: $blue;
+				color: $blue;
+				cursor: pointer;
+				&:hover {
+					background-color: $blue;
+					color: #fff;
+				}
+			}
+			.value>div input[type="radio"]:checked+label {
+				background-color: $blue;
+			}
+		}
+		.quantity.buttons_added {
+			display: none !important;
+		}
 	}
 }

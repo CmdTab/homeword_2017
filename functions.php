@@ -54,6 +54,7 @@ function homeword_setup() {
 		'intentional' => __( 'Intentional Nav', 'homeword' ),
 		'download' => __( 'Download Nav', 'homeword' ),
 		'famnetwork' => __( 'Fam Network Nav', 'homeword' ),
+		'rym' => __( 'RYM', 'homeword' ),
 	) );
 	//Get variable at end of menu
 	add_filter( 'wp_nav_menu_objects', 'add_var', 10, 2 );
@@ -614,27 +615,6 @@ add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 
 
 /** ALL OF THE ONE PAGE CHECKOUT DONATION SCRIPTS FROM LOTE **/
-
-/*Add class to body of donation pages*/
-function donation_classes( $classes ) {
-	if(is_wcopc_checkout()) {
-		$cartProduct = get_field('donation_product', 'option');
-		$recurringProduct = get_field('recurring_product', 'option');
-		global $post;
-		$place = stripos( $post->post_content, 'product_ids="');
-		$shortcode = substr($post->post_content, $place);
-		$shortcode_array = explode('"', $shortcode);
-		$product_ID = $shortcode_array[1];
-		//Does that product belong in the videos group?
-		if($product_ID == $cartProduct) {
-			$classes[] = 'one-time-donation';
-		} elseif($product_ID == $recurringProduct) {
-			$classes[] = 'recurring-donation';
-		}
-	}
-	return $classes;
-}
-add_filter( 'body_class','donation_classes' );
 
 function woo_donate_cart_button_text() {
         //return __( 'Add to Order', 'woocommerce' );

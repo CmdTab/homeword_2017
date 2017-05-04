@@ -42,7 +42,7 @@ foreach ( $products as $single_product_id => $single_product ) :
 					woocommerce_template_single_excerpt();
 				?>
 
-				<div class="product-quantity">
+				<div class="product-quantity cart-donation">
 
 					<?php
 						/**
