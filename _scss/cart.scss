@@ -188,11 +188,6 @@
 .cart-subtotal {
 	font-size: 1.25em;
 	border: 0 !important;
-	&:before {
-		content:'Subtotal:';
-		margin-right: 0.5em;
-		font-weight: bold;
-	}
 	@include bp(44) {
 		width: 30%;
 	}
@@ -500,8 +495,6 @@
 	}
 	input[type="submit"] {
 		@include button(#f7cd23, #fff, #f7cd23);
-		margin: 0 1em 1em 0;
-		float: right;
 	}
 }
 .order-list {
@@ -554,7 +547,7 @@
 	max-width: 100%;
 	text-align: left;
 }
-.payment_methods {
+/*.payment_methods {
 	list-style: none;
 	padding: 0;
 	margin: 0 0 1em;
@@ -571,16 +564,32 @@ input#payment_method_authorize_net_cim	 {
 	+ label {
 		display: none;
 	}
+}*/
+.payment_methods {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #efefef;
 }
-.stripe_new_card,
-.payment_box.payment_method_authorize_net_cim {
+.wc_payment_method {
+
 	label {
 		font-weight: bold;
 		width: 100%;
 		display: inline-block;
-		border-right: 1px solid #ddd;
+
 		padding: 0.5em 1.25em;
-		background: #efefef;
+
+	}
+	> label {
+		text-align: center;
+		border: 0;
+		padding: 1em 1.25em 0.5em;
+		img {
+			&:first-of-type {
+				margin-left: 1em;
+			}
+		}
 	}
 	input {
 		width: 100%;
@@ -591,6 +600,7 @@ input#payment_method_authorize_net_cim	 {
 	p {
 		border-bottom: 1px solid #ddd;
 		margin: 0;
+		text-align: center;
 	}
 
 	select {
@@ -602,12 +612,19 @@ input#payment_method_authorize_net_cim	 {
 	#authorize-net-cim-cc-cvv {
 		width: 100% !important;
 	}
+	fieldset {
+		border: 0;
+		padding: 0 0.5em;
+		margin: 0;
+	}
 	@include bp(44) {
+
 		label {
-			width: 50%;
+			font-size: 0.8125em;
 		}
-		input {
-			width: 45%;
+		> label {
+			width: 100%;
+			font-size: 1em;
 		}
 		select {
 			display: inline-block;
@@ -627,6 +644,43 @@ input#payment_method_authorize_net_cim	 {
 			width: 45% !important;
 		}
 	}
+	@include bp(50) {
+		label {
+			width: 30%;
+			border-right: 1px solid #ddd;
+			padding: 1.25em 1.25em;
+		}
+		> label {
+			width: 100%;
+		}
+		input {
+			width: 65%;
+		}
+		fieldset {
+			padding: 0;
+			p {
+				background: #fff;
+				text-align: left;
+				/*&:last-of-type {
+					text-align: center;
+					background: #efefef;
+					padding: 0.5em 0;
+					label {
+						padding: 0;
+						margin-left: 0.5em;
+					}
+				}*/
+			}
+			label {
+				background: #efefef;
+			}
+		}
+	}
+}
+.place-order {
+	text-align: center;
+	font-size: 1.25em;
+	padding: 1.5em 0.5em;
 }
 dl.variation {
 	font-size: 0.8125em;

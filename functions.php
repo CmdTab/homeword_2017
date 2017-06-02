@@ -626,3 +626,14 @@ if (  function_exists( 'is_wcopc_checkout' ) ) {
 		wp_enqueue_script( 'donate', get_template_directory_uri() . '/_js/donation-min.js', array('jquery'),'', true );
 	}
 }
+function wc_ninja_remove_password_strength() {
+	if ( wp_script_is( 'wc-password-strength-meter', 'enqueued' ) ) {
+		wp_dequeue_script( 'wc-password-strength-meter' );
+	}
+}
+add_action( 'wp_print_scripts', 'wc_ninja_remove_password_strength', 100 );
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+function custom_override_checkout_fields( $fields ) {
+    $fields['account']['account_password']['label'] = 'Account Password (Required for Recurring Donations)';
+    return $fields;
+}
