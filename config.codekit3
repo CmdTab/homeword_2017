@@ -3208,19 +3208,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_scss\/cart.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/cart.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/_scss\/checkout.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3656,12 +3643,6 @@
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
-	"\/functions.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/functions.php",
-		"oF": 0
-		},
 	"\/Gruntfile.js": {
 		"ft": 64,
 		"mi": 1,
@@ -4039,22 +4020,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/single.php",
-		"oF": 0
-		},
-	"\/style.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/style-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/style.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/style.css.map",
 		"oF": 0
 		},
 	"\/svg\/icon-app.php": {
