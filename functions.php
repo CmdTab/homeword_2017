@@ -55,6 +55,8 @@ function homeword_setup() {
 		'download' => __( 'Download Nav', 'homeword' ),
 		'famnetwork' => __( 'Fam Network Nav', 'homeword' ),
 		'rym' => __( 'RYM', 'homeword' ),
+		'main' => __( 'Main Nav', 'homeword' ),
+		'daily-life' => __( 'Daily Life', 'homeword' ),
 	) );
 	//Get variable at end of menu
 	add_filter( 'wp_nav_menu_objects', 'add_var', 10, 2 );
@@ -133,7 +135,8 @@ add_action( 'widgets_init', 'homeword_widgets_init' );
  * Enqueue scripts and styles.
  */
 function homeword_scripts() {
-	wp_enqueue_style( 'homeword-style', get_stylesheet_uri() );
+	$theme_url  = get_template_directory_uri();
+	wp_enqueue_style( 'homeword-style', get_stylesheet_uri(),'','1' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -157,6 +160,12 @@ function homeword_scripts() {
 	if(is_page_template( 'page-famnetwork.php' ) ) {
 		wp_dequeue_style('homeword-style');
 		wp_enqueue_style( 'famnetwork-style', get_template_directory_uri() . '/famnetwork.css' );
+	}
+
+	if(is_page_template( 'page-life.php' ) ) {
+		wp_dequeue_style('homeword-style');
+		wp_enqueue_style( 'doing-life', get_template_directory_uri() . '/doinglife.css' );
+		wp_enqueue_script( 'doing-life-script', $theme_url . '/_js/doing-life-min.js', array('jquery'), '1', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'homeword_scripts' );
@@ -497,7 +506,7 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 }
 
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
-remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
+//remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
 /*Custom Attribute Menus*/
 add_filter('woocommerce_attribute_show_in_nav_menus', 'wc_reg_for_menus', 1, 2);
 
@@ -634,6 +643,81 @@ function wc_ninja_remove_password_strength() {
 add_action( 'wp_print_scripts', 'wc_ninja_remove_password_strength', 100 );
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 function custom_override_checkout_fields( $fields ) {
-    $fields['account']['account_password']['label'] = 'Account Password (Required for Recurring Donations)';
+    $fields['account']['account_password']['label'] = 'Create Account Password';
     return $fields;
+}
+//Separate shipping methods
+add_filter( 'woocommerce_cart_shipping_packages', 'bulky_woocommerce_cart_shipping_packages' );
+
+function bulky_woocommerce_cart_shipping_packages( $packages ) {
+    // Reset the packages
+    $packages = array();
+
+    // Bulky items
+    $bulky_items   = array();
+    $regular_items = array();
+
+    // Sort bulky from regular
+    foreach ( WC()->cart->get_cart() as $item ) {
+        if ( $item['data']->needs_shipping() ) {
+            if ( $item['data']->get_shipping_class() == 'free-shipping' ) {
+                $bulky_items[] = $item;
+            } else {
+                $regular_items[] = $item;
+            }
+        }
+    }
+
+    // Put inside packages
+    if ( $bulky_items ) {
+        $packages[] = array(
+
+            'contents'        => $bulky_items,
+            'contents_cost'   => array_sum( wp_list_pluck( $bulky_items, 'line_total' ) ),
+            'applied_coupons' => WC()->cart->applied_coupons,
+            'destination'     => array(
+                'country'   => WC()->customer->get_shipping_country(),
+                'state'     => WC()->customer->get_shipping_state(),
+                'postcode'  => WC()->customer->get_shipping_postcode(),
+                'city'      => WC()->customer->get_shipping_city(),
+                'address'   => WC()->customer->get_shipping_address(),
+                'address_2' => WC()->customer->get_shipping_address_2()
+            )
+        );
+    }
+    if ( $regular_items ) {
+        $packages[] = array(
+            'contents'        => $regular_items,
+            'contents_cost'   => array_sum( wp_list_pluck( $regular_items, 'line_total' ) ),
+            'applied_coupons' => WC()->cart->applied_coupons,
+            'destination'     => array(
+                'country'   => WC()->customer->get_shipping_country(),
+                'state'     => WC()->customer->get_shipping_state(),
+                'postcode'  => WC()->customer->get_shipping_postcode(),
+                'city'      => WC()->customer->get_shipping_city(),
+                'address'   => WC()->customer->get_shipping_address(),
+                'address_2' => WC()->customer->get_shipping_address_2()
+            )
+        );
+    }
+
+    return $packages;
+}
+
+/**
+* Removes or edits the 'Protected:' part from posts titles
+*/
+ 
+add_filter( 'protected_title_format', 'remove_protected_text' );
+function remove_protected_text() {
+return __('%s');
+}
+
+add_action( 'wp_login_failed', 'my_front_end_login_fail' );
+function my_front_end_login_fail( $username ) {
+     $referrer = $_SERVER['HTTP_REFERER'];
+     if ( !empty($referrer) && !strstr($referrer,'wp-login') && !strstr($referrer,'wp-admin')     ) {
+          wp_redirect( $referrer . '?login=failed' );
+          exit;
+     }
 }

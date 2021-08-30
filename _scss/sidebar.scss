@@ -182,3 +182,28 @@
 		display: none;
 	}
 }
+.woocommerce-product-search {
+	margin: 0 0 1.5em;
+	display: grid;
+	grid-template-columns: 2.5fr 1fr;
+	grid-column-gap: 0.5em;
+	@include bp(50) {
+		//grid-template-columns: 2fr 1fr;
+	}
+	@include bp(55) {
+		grid-template-columns: 2.5fr 1fr;
+	}
+	input {
+		width: 90%;
+	}
+	button {
+		background: $new-blue;
+		color: #fff;
+		border: 0;
+		padding: 0.5em;
+		display: block;
+		&:hover {
+			background: darken($new-blue, 10%);
+		}
+	}
+}

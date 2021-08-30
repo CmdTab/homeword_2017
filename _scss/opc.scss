@@ -391,10 +391,14 @@ td.product-name dl.variation dd.variation-SuggestedAmounts {
 				.modalContent {
 					visibility: visible;
 				}
+				.hideModal {
+					display: inline-block;
+				}
 			}
 		}
 	}
 	.hideModal {
+		display: none;
 		position: fixed;
 		bottom: 20%;
 		left: 50%;

@@ -1,0 +1,69 @@
+.groups {
+    background: url(_i/doing-life/doing-life3.jpg) bottom 80% right 40% no-repeat;
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        //background: rgba(0,0,0,0.4);
+        background-image: linear-gradient(to bottom, transparent, transparent 10%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7));
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    @include bp(44) {
+        background: url(_i/doing-life/doing-life3.jpg) top center no-repeat;
+        &:before {
+            background-image: linear-gradient(to right, transparent, transparent 10%, rgba(0,0,0,0.7) 50%, transparent 90%, transparent);
+        }
+    }
+    .actions {
+        @include bp(44) {
+            text-align: center;
+        }
+    }
+}
+.groups-container {
+    padding: 14em 0;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    h2 {
+        color: #fff;
+    }
+}
+
+.related-courses {
+    list-style: none;
+    margin: 2em 0 0;
+    padding: 0;
+    @include bp(44) {
+        padding-left: 10%;
+    }
+    li {
+        margin: 0 0 2em;
+    }
+    a {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-column-gap: 1em;
+        
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        h4 {
+            font-size: 1.25em;
+            color: #fff;
+            margin: 0 0 0.0625em;
+        }
+    }
+    p {
+        margin: 0 0 1em;
+        font-size: 0.9375em;
+        font-style: italic;
+    }
+}

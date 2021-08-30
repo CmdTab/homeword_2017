@@ -1,0 +1,30 @@
+.benefit {
+    margin-bottom: 2em;
+    text-align: center;
+    .dash-bottom {
+        font-weight: 800;
+        font-size: 1.25em;
+
+    }
+    p {
+        margin: 0;
+    }
+    @include bp(44) {
+        margin: 0;
+        .dash-bottom {
+            font-size: 1.5em;
+        }
+    }
+}
+.cta {
+    text-align: center;
+    margin: 3em 0 0;
+}
+#about {
+    .actions {
+        margin: 2em 0 0;
+        @include bp(44) {
+            text-align: left;
+        }
+    }
+}

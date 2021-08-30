@@ -25,9 +25,20 @@ $_SESSION['cat'] = $_GET['cat'];*/
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/ie.css" />
 	<script src="<?php bloginfo('template_directory'); ?>/_js/html5shiv.js"></script>
 <![endif]-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2ZWQRN');</script>
+<!-- End Google Tag Manager -->
 </head>
 
 <body <?php body_class(); ?>>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2ZWQRN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
@@ -39,10 +50,16 @@ $_SESSION['cat'] = $_GET['cat'];*/
 				</a>
 				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <img src ="<?php bloginfo('template_directory'); ?>/_i/homeword-logo.png">
-                    <span><?php the_field('site_tagline' , 'option'); ?></span>
+                    
                 </a>
 				<div class="header-content">
 					<ul class="social ">
+                        <li>
+							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>my-account" class="my-account">
+                                <span>My Account</span>
+                                <?php include('svg/icon-account.php'); ?>
+							</a>
+						</li>
 						<li>
 							<a href = "https://www.facebook.com/Homeword" target="_blank">
 								<span aria-hidden="true" data-icon="&#x66;"></span>
@@ -56,13 +73,13 @@ $_SESSION['cat'] = $_GET['cat'];*/
 							</a>
 						</li>
 						<li>
-							<a href = "http://www.pinterest.com/homewordcenter" target="_blank">
-								<span aria-hidden="true" data-icon="&#x70;"></span>
-								<span class="assistive-text">Pinterest</span>
+							<a href = "https://www.youtube.com/channel/UCY1vTdorwRKBSgdM5opbTsQ" target="_blank">
+								<span aria-hidden="true" data-icon="y"></span>
+								<span class="assistive-text">YouTube</span>
 							</a>
 						</li>
 						<li>
-							<a href = "https://www.instagram.com/homewordatapu/" target="_blank">
+							<a href = "https://instagram.com/homewordcenter?igshid=h9kt72lxx4p2" target="_blank">
 								<span aria-hidden="true" data-icon="&#x69;"></span>
 								<span class="assistive-text">Instagram</span>
 							</a>
@@ -74,39 +91,8 @@ $_SESSION['cat'] = $_GET['cat'];*/
 		</div>
 		<nav id="site-navigation" class="full-section main-navigation" role="navigation">
 			<div class="wrap group">
-				<ul class="top-nav">
-					<li class="with-sub family-nav">
-						<a href = "#">
-							Free Resources
-							<span aria-hidden="true" data-icon="&#x75;"></span>
-						</a>
-						<?php wp_nav_menu( array( 'theme_location' => 'families', 'menu_class' => 'subnav', 'container' => false) ); ?>
-					</li><!--
-				--><li class="with-sub seminar-nav">
-						<a href = "#">
-							Seminars
-							<span aria-hidden="true" data-icon="&#x75;"></span>
-						</a>
-						<?php wp_nav_menu( array( 'theme_location' => 'seminar', 'menu_class' => 'subnav', 'container' => false) ); ?>
-					</li><!--
-					--><li class="with-sub about-nav">
-						<a href = "#">
-							About
-							<span aria-hidden="true" data-icon="&#x75;"></span>
-						</a>
-						<?php wp_nav_menu( array( 'theme_location' => 'about', 'menu_class' => 'subnav', 'container' => false) ); ?>
-					</li><!--
-					--><li>
-						<a href = "<?php echo esc_url( home_url( '/' ) ); ?>store">Store</a>
-					</li><!--
-                    --><li class="with-sub rym-nav">
-						<a href = "#">
-							RYM
-							<span aria-hidden="true" data-icon="&#x75;"></span>
-						</a>
-						<?php wp_nav_menu( array( 'theme_location' => 'rym', 'menu_class' => 'subnav', 'container' => false) ); ?>
-					</li>
-				</ul>
+                <?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'top-nav', 'container' => false) ); ?>
+
 				<div class="nav-buttons">
 					<a href = "<?php echo esc_url( home_url( '/' ) ); ?>your-donation" class="btn">Donate</a>
 					<?php global $woocommerce; ?>

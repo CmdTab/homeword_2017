@@ -67,9 +67,9 @@
 		div.mejs-time-rail {
 			position: relative;
 			padding: 0;
-			max-width: 250px;
+			//max-width: 250px;
 			.mejs-time-total {
-				max-width: 240px;
+				//max-width: 240px;
 				background: #000;
 			}
 			span {
@@ -79,6 +79,9 @@
 		}
 		div.mejs-volume-button {
 			width: 3em;
+		}
+		.mejs-horizontal-volume-slider {
+			height: 50px;
 		}
 		.mejs-horizontal-volume-total {
 			height: 10px;

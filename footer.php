@@ -14,7 +14,7 @@
 				<ul class="three-list group">
 					<li>
 						<h3>About HomeWord</h3>
-						<p>HomeWord helps families succeed by creating Biblical resources that build strong marriages, confident parents, empowered kids and healthy leaders. Founded by Jim Burns and supported by Doug Fields, HomeWord and Azusa Pacific University have partnered to form The HomeWord Center for Youth and Family. <a href = "<?php echo esc_url( home_url( '/' ) ); ?>about">Learn More &raquo;</a></p>
+						<p>HomeWord helps families succeed by creating Biblical resources that build strong marriages, confident parents, empowered kids and healthy leaders. Founded by Jim Burns, HomeWord seeks to advance the work of God in the world by educating, equipping, and encouraging parents and churches. <a href = "<?php echo esc_url( home_url( '/' ) ); ?>about">Learn More &raquo;</a></p>
 						<ul class="social ">
 							<li>
 								<a href = "https://www.facebook.com/Homeword" target="_blank">
@@ -35,39 +35,31 @@
 								</a>
 							</li>
 							<li>
-								<a href = "https://www.instagram.com/homewordatapu/" target="_blank">
+								<a href = "https://instagram.com/homewordcenter?igshid=h9kt72lxx4p2" target="_blank">
 									<span aria-hidden="true" data-icon="&#x69;"></span>
 									<span class="assistive-text">Instagram</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UCY1vTdorwRKBSgdM5opbTsQ" target="_blank">
+									<span aria-hidden="true" data-icon="y"></span>
+									<span class="assistive-text">YouTube</span>
 								</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<h3>About Azusa Pacific University</h3>
-						<p>APU is a leading Christian college ranked as one of the nation’s best by U.S. News &amp; World Report and The Princeton Review. Located near Los Angeles in Southern California, APU is a Christian university offering associate’s, bachelor’s, master's, doctoral, and degree completion programs, both on campus and online.  <a href = "<?php echo esc_url( home_url( '/' ) ); ?>about-apu/">Learn More »</a></p>
-						<ul class="social">
+						<h3>Support Our Mission</h3>
+						<p>HomeWord is non-profit, donor supported ministry. If you would like to partner with HomeWord in our effort to help more parents and families you can make a donation. Your investment will allow us to expand this ministry by offering more resources to families and churches in need.</p>
+						<ul class="footer-options">
 							<li>
-								<a href = "https://www.facebook.com/azusapacific" target="_blank">
-									<span aria-hidden="true" data-icon="&#x66;"></span>
-									<span class="assistive-text">Facebook</span>
+								<a href = "https://homeword.com/your-donation">
+									Donate Now
 								</a>
 							</li>
 							<li>
-								<a href = "http://twitter.com/azusapacific" target="_blank">
-									<span aria-hidden="true" data-icon="&#x74;"></span>
-									<span class="assistive-text">Twitter</span>
-								</a>
-							</li>
-							<li>
-								<a href = "http://pinterest.com/azusapacific/" target="_blank">
-									<span aria-hidden="true" data-icon="&#x70;"></span>
-									<span class="assistive-text">Pinterest</span>
-								</a>
-							</li>
-							<li>
-								<a href = "http://www.youtube.com/user/UniversityRelations" target="_blank">
-									<span aria-hidden="true" data-icon="&#x79;"></span>
-									<span class="assistive-text">YouTube</span>
+								<a href = "https://homeword.com/store/">
+									View Resources
 								</a>
 							</li>
 						</ul>
@@ -102,15 +94,13 @@
 			</div><!-- .content-wrap -->
 			<div class="bottom-footer">
 				<div class="content-wrap group">
-					<ul>
+					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => '', 'container' => false) ); ?>
+					<!--<ul>
 						<li>
 							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
 						</li>
 						<li>
 							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>/families/?cat=families">Families</a>
-						</li>
-						<li>
-							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>/church-leaders/?cat=church">Church&nbsp;&nbsp;Leaders</a>
 						</li>
 						<li>
 							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>/about">About</a>
@@ -121,7 +111,7 @@
 						<li>
 							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>/your-donation">Donate</a>
 						</li>
-					</ul>
+					</ul>-->
 					<div class="copyright">
 						Copyright &copy; <?php echo date("Y"); ?> HomeWord. All Rights Reserved.
 					</div>

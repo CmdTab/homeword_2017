@@ -206,6 +206,40 @@ h1,h2,h3,h4,h5,h6 {
 .icon-plus {
 	width: 0.785714827477932em;
 }
+.hideModal {
+	display: none;
+}
+.content-restricted {
+	margin: 2em auto;
+	max-width: 45em;
+	padding: 2em;
+	background: $tab-gray;
+	//color: #fff;
+	#loginform {
+		label {
+			font-weight: bold;
+			display: block;
+		}
+		.login-username,
+		.login-password {
+			input {
+				width: 100%;
+				padding: 0.5em;
+				border: 1px solid #ccc;
+			}
+		}
+		input[type="submit"] {
+			@include button(#f7cd23, #fff, #f7cd23);
+		}
+	}
+}
+.notification {
+	background: #dc3545;
+	padding: 0.5em 1em;
+	color: #fff;
+	margin: 0 0 1em;
+}
+
 @import "fonts";
 @import "header";
 @import "carousel";
@@ -230,3 +264,5 @@ h1,h2,h3,h4,h5,h6 {
 @import "home";
 @import "checkout";
 @import "opc";
+@import "comments";
+@import "account";

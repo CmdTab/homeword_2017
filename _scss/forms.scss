@@ -166,10 +166,12 @@
 .ginput_cardextras {
 	margin-bottom: 0;
 }
-.gform_footer {
+.gform_footer,
+.gform_page_footer {
 	text-align: right;
 	input[type="submit"] {
 		@include button(#f7cd23, #fff, #f7cd23);
+		font-size: 1em;
 	}
 }
 /*Datepicker*/
@@ -378,6 +380,9 @@ body div#ui-datepicker-div[style] {
 		float: right;
 		width: 65%;
 		font-size: 0.7em;
+		+ .ginput_container {
+			margin-left: 35%;
+		}
 	}
 }
 .gfield_time_hour,
@@ -420,6 +425,9 @@ body div#ui-datepicker-div[style] {
 		}
 	}
 }
+.ginput_recaptcha {
+	float: right;
+}
 /*Errors*/
 .validation_message {
 	color: $red;
@@ -429,5 +437,19 @@ body div#ui-datepicker-div[style] {
 }
 .validation_error {
 	background: transparentize($red, 0.8);
+	text-align: center;
+}
+
+.ginput_quantity_label {
+	margin-left: 2em;
+}
+.ginput_quantity {
+	width: auto !important;
+}
+.gform_page_footer {
+	display: block !important;
+}
+.event-mailing {
+	background: #eee;
 	text-align: center;
 }

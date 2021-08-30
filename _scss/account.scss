@@ -1,0 +1,309 @@
+.woocommerce-MyAccount-navigation {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        a {
+            display: block;
+            background: $blue;
+            color: #fff;
+            font-weight: bold;
+            padding: 1em 1.25em;
+
+            &:hover {
+                background: darken($blue, 10%);
+            }
+        }
+        li {
+            border-bottom: 1px solid darken($blue, 10%);
+            &.is-active {
+                a {
+                    background: darken($blue, 15%);
+                }
+            }
+        }
+    }
+    @include bp(44) {
+
+    }
+}
+
+.woocommerce-MyAccount-content {
+    background: #fff;
+    padding: 1em 5%;
+    border: 1px solid $tab-gray;
+    @include bp(44) {
+        border: 1px solid $tab-gray;
+    }
+    .shop_table {
+        border: 0;
+        th,
+        td {
+            padding: 0.25em;
+        }
+        .membership-content-excerpt {
+            display: none;
+        }
+        .woocommerce-orders-table__cell-order-actions {
+            a {
+                margin-left: 0.5em;
+            }
+        }
+    }
+    .payment_methods {
+        background: #fff;
+    }
+}
+.woocommerce-account {
+    .woocommerce {
+        > h2 {
+            background: $blue;
+            display: inline-block;
+            padding: 0.5em 1em;
+            margin: 0;
+            color: #fff;
+        }
+    }
+    .woocommerce-form-login,
+    .woocommerce-form-register {
+        background: $blue;
+        padding: 1em;
+        max-width: 35em;
+        label {
+            color: #fff;
+            display: block;
+            font-size: 1.125em;
+            &.woocommerce-form__label-for-checkbox {
+                margin: 0 0 1em;
+            }
+        }
+        input {
+            width: 100%;
+            padding: 0.5em;
+            font-size: 1.125em;
+            border: 0;
+            &[type=checkbox] {
+                width: auto;
+            }
+            &[type=submit] {
+                width: auto;
+                padding: 0.5em 1em;
+                background: $blue;
+                color: #fff;
+                font-weight: bold;
+                border: 1px solid #fff;
+                &:hover {
+                    background: #fff;
+                    color: $blue;
+                }
+            }
+        }
+        button {
+            padding: 0.5em 1em;
+            background: $blue;
+            color: #fff;
+            font-weight: bold;
+            border: 1px solid #fff;
+            &:hover {
+                background: #fff;
+                color: $blue;
+            }
+        }
+        .woocommerce-LostPassword {
+            a {
+                color: #fff;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .woocommerce-form-register {
+        background: $new-dark-blue;
+        button {
+            background: $new-dark-blue;
+        }
+    }
+}
+.logged-in {
+    &.woocommerce-account {
+        .woocommerce {
+            @include bp(44) {
+                display: grid;
+                grid-template-columns: 35% 1fr;
+            }
+            @include bp(44) {
+                grid-template-columns: 25% 1fr;
+            }
+        }
+    }
+}
+
+#add-member-form {
+    .form-fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+    }
+    .form-row {
+        width: 100% !important;
+        input,
+        select,
+        .woocommerce-input-wrapper {
+            width: 100%;
+        }
+    }
+    input {
+        &[type=submit] {
+            display: inline-block;
+            padding: 0.25em 1.25em;
+            background: #fff;;
+            border: 1px solid $blue;
+            color: $blue;
+            &:hover {
+                background: $blue;
+                color: #fff;
+            }
+        }
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        abbr {
+            border: 0;
+        }
+    }
+}
+.my_team_details {
+    @include bp(44) {
+        width: 60%;
+    }
+    
+    td {
+        border: 1px solid #ddd;
+        padding: 0.25em 0.5em !important;
+        &:first-of-type {
+            font-weight: bold;
+            background: $tab-gray;
+        }
+    }
+}
+#team-name-form,
+#registration-link-form {
+    input {
+        margin-right: 0.5em;
+    }
+    button {
+        display: inline-block;
+        padding: 0.25em 1.25em;
+        background: #fff;;
+        border: 1px solid $blue;
+        color: $blue;
+        &:hover {
+            background: $blue;
+            color: #fff;
+        }
+    }
+}
+.woocommerce-account {
+    .col2-set {
+        @include bp(50) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 2em;
+        }
+        
+    }
+}
+
+.woocommerce-account-join-team {
+    .col-1,
+    .col-2 {
+        width: 100% !important;
+    }
+    .register {
+        background: $new-dark-blue;
+        padding: 1em;
+        max-width: 35em;
+        label {
+            color: #fff;
+            display: block;
+            font-size: 1.125em;
+            &.woocommerce-form__label-for-checkbox {
+                margin: 0 0 1em;
+            }
+        }
+        input {
+            width: 100%;
+            padding: 0.5em;
+            font-size: 1.125em;
+            border: 0;
+            &[type=checkbox] {
+                width: auto;
+            }
+            &[type=submit] {
+                width: auto;
+                padding: 0.5em 1em;
+                background: $new-dark-blue;
+                color: #fff;
+                font-weight: bold;
+                border: 1px solid #fff;
+                &:hover {
+                    background: #fff;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+.my_membership_content {
+    display: block;
+    thead,
+    tbody,
+    tfoot {
+        display: block;
+    }
+    tr {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        @include bp(50) {
+            //grid-template-columns: 2fr 1fr 1fr 1fr;
+        }
+    }
+    td,
+    th {
+        display: block;
+        min-width: 0 !important;
+        &.membership-content-type,
+        &.membership-content-accessible {
+            display: none;
+        }
+        &.membership-content-actions {
+            text-align: right;
+            .wc-memberships-members-area-pagination {
+                float: none;
+            }
+        }
+    }
+    tfoot {
+        tr {
+            display: block;
+            text-align: right;
+        }
+        .wc-memberships-members-area-pagination {
+            float: none;
+        }
+    }
+}
+//row
+.membership-content {
+    .membership-content-title {
+       
+    }
+    .membership-content-actions {
+    }
+}
+//cells
+
+

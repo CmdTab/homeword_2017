@@ -1,0 +1,56 @@
+@import "normalize";
+@import "bits";
+@import "var";
+
+
+html,body {
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	color: $text;
+	font:
+		0.875em/1.8
+		"Open Sans","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	@include bp(44) {
+		font-size: 1em;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    color: $dk-gray;
+}
+a {
+    color: $red;
+}
+.btn {
+	@include button($red, #fff, $red);
+	&.outline {
+		color: #fff;
+		background: none;
+		border-color: #fff;
+		&:hover {
+			background: #fff;
+			color: $black;
+		}
+	}
+	&.black {
+		background: $black;
+		border-color: $black;
+		&:hover {
+			background: #fff;
+			border-color: $black;
+			color: $black;
+		}
+	}
+}
+@import "modules";
+@import "header";
+@import "sessions";
+@import "benefits";
+@import "testimonials";
+@import "instructor";
+@import "pricing";
+@import "small";
+@import "footer";

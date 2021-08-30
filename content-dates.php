@@ -16,14 +16,14 @@
 	<ul class="date-list">
 <?php	// loop through the rows of data
 	while ( have_rows('seminar') ) : the_row();
-	$contact_name = get_sub_field('seminar_contact');
-	$contact_email = get_sub_field('seminar_contact_email');
-	$contact_phone = get_sub_field('seminar_contact_phone');
-	$contact_url = get_sub_field('seminar_contact_url');
-	$startdate = DateTime::createFromFormat('Ymd', get_sub_field('seminar_start_date'));
-	//$startdate->format('d-m-Y');
-	$enddate = DateTime::createFromFormat('Ymd', get_sub_field('seminar_end_date'));
-	//$startdate->format('d-m-Y');
+		$contact_name = get_sub_field('seminar_contact');
+		$contact_email = get_sub_field('seminar_contact_email');
+		$contact_phone = get_sub_field('seminar_contact_phone');
+		$contact_url = get_sub_field('seminar_contact_url');
+		$startdate = DateTime::createFromFormat('Ymd', get_sub_field('seminar_start_date'));
+		//$startdate->format('d-m-Y');
+		$enddate = DateTime::createFromFormat('Ymd', get_sub_field('seminar_end_date'));
+		//$startdate->format('d-m-Y');
 ?>
 		<li class="group">
 			<div class="date-info">

@@ -1,0 +1,42 @@
+.instructor {
+    color: #fff;
+    background: $black;
+    padding: 5em 5%;
+
+    position: relative;
+    z-index: 2;
+    h2 {
+        color: #fff;
+    }
+    p {
+        margin: 3em 0;
+        font-size: 0.875em;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    @include bp(44) {
+        width: 55%;
+    }
+}
+.instructor-container {
+    position: relative;
+    padding: 2em 0 0;
+    img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include bp(44) {
+        padding: 4em 0 6em;
+        img {
+            position: absolute;
+            right: 0;
+            left: 50%;
+            top: 0;
+            width: auto;
+            margin: 0;
+            max-width: 38em;
+        }
+    }
+}

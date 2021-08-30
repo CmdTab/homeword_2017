@@ -15,13 +15,13 @@
 						$authorURL .= '?cat=' . $_GET['cat'];
 					}
 				?>
-				<?php 
+				<?php
 					$postType = get_post_type();
 					if($postType == 'post'):
 						echo 'Posted by ';
 					else :
 						echo 'By ';
-					endif;					
+					endif;
 				?>
 				<a href = "<?php echo $authorURL; ?>"><?php the_author(); ?></a> &middot; <?php the_date(); ?>
 						<?php edit_post_link( __( 'Edit', 'homeword' ), '<span class="edit-link">', '</span>' ); ?>
@@ -103,6 +103,10 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+	<div class="donation-box">
+		<h2>Help us reach the next generation of families</h2>
+		<a href = "https://homeword.com/your-donation" class="btn">Donate</a>
+	</div>
 	<div class="entry-social group">
 		<div class="social-buttons">
 			<!-- AddThis Button BEGIN -->
@@ -128,6 +132,12 @@
 		</div>
 
 	</footer><!-- .entry-meta -->
+	<?php
+		// If comments are open or we have at least one comment, load up the comment template
+		if ( comments_open() || get_comments_number() ) :
+			comments_template();
+		endif;
+	?>
 	<?php homeword_post_nav(); ?>
 	<div class="related-posts">
 		<?php

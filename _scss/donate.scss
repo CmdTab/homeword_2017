@@ -286,3 +286,8 @@
 		display: inline-block !important;
 	}
 }
+.wcopc {
+	+ .woocommerce-form-coupon-toggle {
+		display: none;
+	}
+}

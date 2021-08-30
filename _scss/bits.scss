@@ -43,7 +43,8 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-.assistive-text {
+.assistive-text,
+.screen-reader-text {
 	position: absolute;
 	top: -9999px;
 	left: -9999px;

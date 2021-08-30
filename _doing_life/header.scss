@@ -1,0 +1,133 @@
+.site-header {
+    background: url(_i/doing-life/doing-life1.jpg) no-repeat;
+    background-position: bottom right 65%;
+    background-size: cover;
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        //background: rgba(0,0,0,0.4);
+        background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7) 50%, transparent 80%, transparent 90%,rgba(0,0,0,0.9));
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    @include bp(44) {
+        background-position: top center;
+        &:before {
+            background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7) 20%, transparent 60%, transparent 80%,rgba(0,0,0,0.9));
+        }
+    }
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 1em 0 0;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        display: none;
+        @include bp(44) {
+            display: block;
+        }
+        li {
+            display: inline-block;
+            margin: 0 1em;
+            vertical-align: middle;
+        }
+        a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 800;
+            padding: 2em 1em;
+            &:after {
+                content: '';
+                display: block;
+                width: 25%;
+                height: 0.25em;
+                background: transparent;
+            }
+            &:hover {
+                color: $red;
+                &:after {
+                    background: $red;
+                }
+            }
+        }
+        .logo {
+            margin: 0 3%;
+            a {
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                background: url(_i/doing-life/doing-life.png) center center no-repeat;
+                background-size: 100%;
+                height: 8em;
+                width: 8em;
+                padding: 0;
+            }
+        }
+    }
+}
+.header-container {
+    min-height: 90vh;
+    padding: 2em 0 0;
+    @include bp(50) {
+        min-height: 55vh;
+        padding: 0;
+    }
+    .actions {
+        padding-bottom: 2em;
+    }
+}
+.banner-content {
+    margin: 10% auto 1em;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    h1 {
+        font-size: 2em;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0 0 0.15em;
+        line-height: 1;
+    }
+    p {
+        font-size: 0.875em;
+        margin: 0 auto 1em
+    }
+
+    @include bp(44) {
+        h1 {
+            font-size: 4.5em;
+        }
+    }
+
+}
+.subtitle {
+    font-weight: normal;
+    margin: 0 0 0.25em;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    color: #fff;
+    @include bp(44) {
+        font-size: 1.5em;
+        margin: 0;
+    }
+}
+.mobile-logo {
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: 8em;
+    margin: 0 auto 8em;
+    @include bp(44) {
+        display: none;
+    }
+}

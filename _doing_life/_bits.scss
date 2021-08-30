@@ -1,0 +1,96 @@
+@mixin bp($point) {
+	@if $point == 80 {
+		@media (min-width: 80em) { @content; }
+	}
+	@else if $point == 62.5 {
+		@media (min-width: 62.5em) { @content; }
+	}
+	@else if $point == 50 {
+		@media (min-width: 50em) { @content; }
+	}
+	@else if $point == 44 {
+		@media (min-width: 44em) { @content; }
+	}
+	@else if $point == 30 {
+		@media (min-width: 30em) { @content; }
+	}
+	@else if $point == 25 {
+		@media (min-width: 25em) { @content; }
+	}
+}
+@mixin bph($point) {
+	@if $point == 28 {
+		@media (max-height: 28em) { @content; }
+	}
+	@else if $point == 44 {
+		@media (max-height: 44em) { @content; }
+	}
+	@else if $point == 50 {
+		@media (max-height: 50em) { @content; }
+	}
+}
+
+
+/*Clearfix*/
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+	zoom:1;
+}
+/*Box-sizing*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*Responsive Images*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+.assistive-text {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+@mixin button($back-color, $text-color, $border-color) {
+	display: inline-block;
+	padding: 1em 2.25em;
+	font-size: 0.875em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: $text-color;
+	letter-spacing: 1px;
+	background-color: $back-color;
+	border: 1px solid $border-color;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 0.25em;
+	&:hover {
+		color: $text-color;
+		background: darken($back-color, 10%);
+	}
+}

@@ -23,26 +23,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price">
-
-	<?php
-	if ( $product->product_type !== 'grouped' ) :
-		$currentPrice = $product->get_price();
-		$sale = get_post_meta( get_the_ID(), '_sale_price', true);
-		if ($sale === $currentPrice) :
-			echo '<div class="sale price">$' . $currentPrice . "</div>";
-		else :
-			echo '<div class="price">$' . $currentPrice . "</div>";
-		endif;
-		if ($sale === $currentPrice) :
-	?>
-		<span class="list-price">List Price: <?php echo $product->get_price_html(); ?></span>
-	<?php endif; endif;?>
-
-	<!-- <p class="price"><?php // echo $product->get_price_html(); ?></p> -->
-
-	<meta itemprop="price" content="<?php echo esc_attr( $product->get_display_price() ); ?>" />
-	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" />
-	<link itemprop="availability" href="http://schema.org/<?php echo $product->is_in_stock() ? 'InStock' : 'OutOfStock'; ?>" />
-
-</div>
+<p class="price"><?php echo $product->get_price_html(); ?></p>

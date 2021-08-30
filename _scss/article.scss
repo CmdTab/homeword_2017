@@ -285,3 +285,29 @@ div.woocommerce:not(.columns-4) {
 		}
 	}
 }
+.password-form {
+	min-height: 50vh;
+	text-align: center;
+	padding: 2em 10%;
+	font-size: 1.125em;
+	input {
+		padding: 0.25em 0.5em;
+	}
+	input[type=submit] {
+		background: $blue;
+		color: #fff;
+		padding: 0.375em 1em;
+		border: 0;
+	}
+}
+.donation-box {
+	background: #eee;
+	//color: #fff;
+	max-width: 30em;
+	padding: 1.5em;
+	text-align: center;
+	margin: 2em auto 1em;
+	h2 {
+		margin: 0 0 0.75em;
+	}
+}

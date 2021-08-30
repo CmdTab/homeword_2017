@@ -40,7 +40,12 @@ get_header(); ?>
 
 
 			<?php endwhile; // end of the loop. ?>
-
+			<?php
+				// If comments are open or we have at least one comment, load up the comment template
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+			?>
 		</div><!-- content-section -->
 		<?php get_sidebar(); ?>
 	</div><!-- .general-content -->

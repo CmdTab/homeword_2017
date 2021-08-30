@@ -1,15 +1,12 @@
 function navDropdown() {
-	jQuery('.with-sub > a').click(function() {
+	jQuery('.menu-item-has-children > a').click(function(e) {
 		if(jQuery(this).parent().hasClass('expand')) {
-			jQuery('.with-sub').removeClass('expand');
-			jQuery(this).children('span').attr("data-icon", 'u');
+			jQuery('.menu-item-has-children').removeClass('expand');
 		} else {
-			jQuery('.with-sub').removeClass('expand');
-			jQuery('.with-sub > a').children('span').attr("data-icon", 'u');
+			jQuery('.menu-item-has-children').removeClass('expand');
 			jQuery(this).parent().toggleClass('expand');
-			jQuery(this).children('span').attr("data-icon", 'd');
 		}
-		return false;
+		e.preventDefault()
 	});
 }
 function sidebarHeight() {
@@ -164,6 +161,18 @@ function cartDonation() {
 		}
 	});
 }
+
+function teamLink() {
+	if (jQuery(".wc-item-meta")[0]) {
+		jQuery('.wc-item-meta a').each(function() {
+			if(jQuery(this).text() == '(view team)') {
+				var url = jQuery(this).attr('href');
+				var newURL = url.replace("members", "add-member");
+				jQuery(this).attr('href',newURL);
+			}
+		});
+	}
+}
 jQuery(document).ready(function() {
 	//var vw = jQuery(window).width();
 	navDropdown();
@@ -181,6 +190,7 @@ jQuery(document).ready(function() {
     couponButton();
     closeCouponModal();
 	cartDonation();
+	teamLink();
 });
 jQuery(window).load(function() {
 	var vw = jQuery(window).width();
