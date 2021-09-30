@@ -1,0 +1,90 @@
+.webinar {
+    .sideBySide {
+        padding-bottom: 8em;
+        &--text {
+            padding-top: 0;
+            @include bp(44) {
+                padding-top: 4em;
+            }
+            h2 {
+                padding-bottom: 0.75em;
+                @include bp(44) {
+                    padding-bottom: 1em;
+                }
+            }
+            ul {
+                list-style: disc;
+                padding: 0 0 0.5em 2em;
+            }
+            li {
+                padding-bottom: 1em;
+                font-size: 1.1em;
+
+                @include bp(62.5) {
+                    font-size: 1em;
+                }
+            }
+            p {
+                padding-bottom: 0;
+            }
+        }
+        &--image {
+            position: relative;
+            display: block;
+            align-items: unset;
+        }
+    }
+}
+
+.feature {
+    background-color: #fff;
+    padding: 2.5em 4em 2.5em 2.35em;
+    position: absolute;
+    bottom: -8em;
+    right: 0;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 1em;
+    box-shadow: $box-shadow;
+
+    @include bp(62.5) {
+        bottom: -5em;
+    }
+    span {
+        display: inline-block;
+        background-color: $blue-sky;
+        color: $blue-lt;
+        margin-bottom: 1.75em;
+        padding: 0.75em 1.25em;
+        border-radius: 2em;
+        font-size: 0.8em;
+        line-height: 1.15em;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-style: italic;
+        line-height: 1.5;
+
+        &:last-of-type {
+            padding-bottom: 0.65em;
+        }
+    }
+
+    h4 {
+        padding-bottom: 0.35em;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+        font-weight: 500;
+        letter-spacing: -0.015em;
+
+        @include bp(62.5) {
+            font-size: 0.875em;
+        }
+    }
+}

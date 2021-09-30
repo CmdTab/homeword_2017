@@ -57,6 +57,7 @@ function homeword_setup() {
 		'rym' => __( 'RYM', 'homeword' ),
 		'main' => __( 'Main Nav', 'homeword' ),
 		'daily-life' => __( 'Daily Life', 'homeword' ),
+		'homewordplus' => __( 'Homeword Plus', 'homeword' ),
 	) );
 	//Get variable at end of menu
 	add_filter( 'wp_nav_menu_objects', 'add_var', 10, 2 );
@@ -161,11 +162,14 @@ function homeword_scripts() {
 		wp_dequeue_style('homeword-style');
 		wp_enqueue_style( 'famnetwork-style', get_template_directory_uri() . '/famnetwork.css' );
 	}
-
 	if(is_page_template( 'page-life.php' ) ) {
 		wp_dequeue_style('homeword-style');
 		wp_enqueue_style( 'doing-life', get_template_directory_uri() . '/doinglife.css' );
 		wp_enqueue_script( 'doing-life-script', $theme_url . '/_js/doing-life-min.js', array('jquery'), '1', true );
+	}
+	if(is_page_template( 'page-homeword-plus.php' ) ) {
+		wp_dequeue_style('homeword-style');
+		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/homewordplus.css' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'homeword_scripts' );

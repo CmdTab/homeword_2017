@@ -1,0 +1,113 @@
+.sectionContainer.about {
+
+    .wrap {
+        text-align: center;
+    }
+
+    .sectionHeader {
+        h2 {
+            padding-bottom: 0.35em;
+        }
+        p {
+            padding-bottom: 1.5em;
+        }
+    }
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+    @include bp(62.5) {
+        align-items: center;
+        padding-bottom: 2em;
+    }
+
+    &--image,
+    &--text {
+        flex: 0 0 100%;
+    }
+
+    &--image {
+        order: 1;
+        padding-bottom: 2em;
+        max-width: 34em;
+        margin: 0 auto;
+
+        @include bp(44) {
+            padding-bottom: 3em;
+        }
+
+        @include bp(62.5) {
+            order: 0;
+            padding-bottom: 0;
+            flex-basis: 45%;
+            margin: 0 !important;
+        }
+        
+        img {
+            border-radius: 1em;
+        }
+    }
+    &--items {
+        order: 0;
+        @include bp(44) {
+            max-width: 32em;
+            margin: 0 auto;
+        }
+
+        @include bp(62.5) {
+            order: 1;
+            max-width: none;
+            margin: 0;
+            padding-left: 2.2em;
+            flex-basis: 55%;
+        }
+
+        li {
+            position: relative;
+            text-align: center;
+            padding-bottom: 1.75em;
+
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+
+            @include bp(44) {
+                text-align: left;
+                padding: 0 0 2.5em 5.15em;
+            }
+        }
+
+        h3 {
+            margin-top: -0.25em;
+            padding-bottom: 0.35em;
+        }
+
+        span {
+            display: block;
+        }
+
+        a {
+            color: $blue-dk;
+            font-weight: 700;
+        }
+    }
+
+    .icon {
+        margin: 0 auto 1.75em;
+        max-width: 3.75em;
+        max-height: 3.75em;
+
+        @include bp(44) {
+            position: absolute;
+            left: 0;
+            top: 0.35em;
+            margin: 0;
+        }
+
+        svg {
+            border-radius: 50%;
+        }
+    }
+}

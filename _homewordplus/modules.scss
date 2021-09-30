@@ -1,0 +1,27 @@
+blockquote {
+	font-size: 0.875rem;
+	font-style: italic;
+	color: darken($text, 5%);
+}
+
+hr {
+	display: block;
+	height: 1px;
+	width: 100%;
+	background: $gray;
+	margin: 1rem auto;
+	border: 0;
+}
+.hidemodal {
+	display: none;
+	position: fixed;
+	bottom: 20%;
+	left: 50%;
+	text-align: center;
+	transform: translateX(-50%);
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color: #fff;
+	text-decoration: none;
+	z-index: 2001;
+}

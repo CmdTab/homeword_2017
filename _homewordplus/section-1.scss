@@ -1,0 +1,136 @@
+.blue-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $blue-lt;
+    height: 30%;
+    width: 100%;
+
+    @include bp(44) {
+        height: 50%;
+    }
+
+    @include bp(62.5) {
+        top: 0;
+        left: auto;
+        background-color: $blue-lt;
+        height: 100%;
+        width: 39%;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+    height: 35.5em;
+    width: 35.5em;
+    position: absolute;
+    z-index: 1;
+
+    &.yellow {
+        top: -23.75em;
+        left: -31em;
+        background-color: $yellow;
+
+        @include bp(50) {
+            top: -25.75em;
+        }
+    }
+
+    &.orange {
+        bottom: -27.8em;
+        right: -26em;
+        background-color: $orange;
+    }
+}
+
+.sideBySide {
+    position: relative;
+
+    &--text,
+    &--image {
+        position: relative;
+        margin: 0 auto;
+        @include bp(62.5) {
+            flex-basis: 47%;
+            max-width: none;
+            margin: 0;
+            &.first {
+                margin-right: 6%;
+            }
+        }
+        
+    }
+
+    &--text {
+        z-index: 2;
+        padding-top: 0;
+        text-align: center;
+        max-width: 32em;
+
+        @include bp(62.5) {
+            text-align: left;
+        }
+
+        p {
+            padding-bottom: 1em;
+            @include bp(44) {
+                padding-bottom: 1.5em;
+            }
+            @include bp(62.5) {
+                padding-bottom: 2.25em;
+            }
+        }
+    }
+
+    &--image {
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        max-width: 34em;
+
+        img {
+            border-radius: 2em;
+        }
+    }
+
+    h1 {
+        padding-bottom: 0.3em;
+        @include bp(44) {
+            padding-bottom: 0.5em;
+        }
+    }
+}
+
+.action-container {
+    padding-bottom: 3em;
+
+    @include bp(44) {
+        padding-bottom: 4em;
+    }
+
+    @include bp(62.5) {
+        padding-bottom: 0;
+    }
+    
+    .btn {
+        display: block;
+        max-width: 16em;
+        margin: 0 auto 0.5em;
+        font-size: 0.9em;
+
+        @include bp(30) {
+            display: inline-block;
+            max-width: none;
+            margin: 0 0.25em 0 0;
+        }
+
+        @include bp(62.5) {
+            font-size: 0.9em;
+        }
+
+        @include bp(80) {
+            margin-right: 1em;
+        }
+    }
+}

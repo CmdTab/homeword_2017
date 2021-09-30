@@ -1,0 +1,102 @@
+.faq {
+    .wrap {
+        max-width: 42em;
+    }
+
+    h2 {
+        padding-bottom: 1.75em;
+    }
+}
+
+.accordion {
+    position: relative;
+    margin-bottom: 1em;
+
+    &--button > span,
+    &--content {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    &--button {
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 1em;
+        text-align: center;
+        padding: 2em 2em 2em 3.15em;
+        cursor: pointer;
+        transition: background-color 0.2s linear;
+        box-shadow: 0 5px 15px 0 rgba(30, 61, 96, 0.03);
+        
+        > span {
+            letter-spacing: -0.015em;
+            font-weight: 800;
+            font-size: 1.35em;
+            color: $text;
+            text-align: center;
+            transition: color 350ms ease-in-out;
+        }
+
+    }
+
+    &--content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 350ms ease-in-out;
+
+        p {
+            text-align: left;
+            padding: 1em 2.6em;
+            margin: 0;
+        }
+    }
+
+    &--icon {
+        position: absolute;
+        z-index: 2;
+        left: 1.6em;
+        top: 1.875em;
+        transition: all 350ms ease-in-out;
+
+        &.plus {
+            opacity: 1;
+        }
+
+        &.minus {
+            opacity: 0;
+        }
+        
+        svg {
+            transition: all 350ms ease-in-out;
+            fill: $gray-blue-dk;
+            background-color: $gray-lt;
+            border-radius: 50%;
+            padding: 0.5em;
+        }
+    }
+
+    &.active {
+        .accordion--icon {
+            &.plus {
+                opacity: 0;
+            }
+
+            &.minus {
+                opacity: 1;
+            }
+
+            svg {
+                background-color: $blue;
+                fill: #fff;
+            }
+        }
+        span {
+            color: $blue;
+        }
+    }
+}

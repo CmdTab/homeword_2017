@@ -886,6 +886,538 @@
       "oAP" : "\/_fonts\/homewordv2.woff",
       "oF" : 0
     },
+    "\/_homewordplus\/base.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 0,
+      "oAP" : "\/homewordplus.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/bits.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/bits.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/footer.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/footer.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/header.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/header.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/modules.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/modules.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/normalize.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/normalize.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/section-1.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/section-1.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/section-2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/section-2.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/section-3.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/section-3.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/section-4.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/section-4.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/section-5.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/section-5.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/section-6.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/section-6.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/section-7.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/section-7.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/section-8.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/section-8.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/testimonials.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/testimonials.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_homewordplus\/var.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/var.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-add.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-add.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-courses.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-courses.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-facebook.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-facebook.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-homeword-logo-white.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-homeword-logo-white.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-homeword-logo.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-homeword-logo.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-instagram.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-instagram.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-menu.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-menu.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-minus.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-minus.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-multiple-uses.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-multiple-uses.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-orange-arrow.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-orange-arrow.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-seamless-delivery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-seamless-delivery.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-star-row.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-star-row.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-star.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-star.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-trusted-content.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-trusted-content.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-twitter.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-twitter.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-unlimited-access.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-unlimited-access.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-webinars.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-webinars.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-yellow-arrow.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-yellow-arrow.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/_svg\/icon-youtube.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_i\/_homeword-plus\/_svg\/icon-youtube.php",
+      "oF" : 0
+    },
+    "\/_i\/_homeword-plus\/albert-tate.png" : {
+      "ft" : 32768,
+      "iS" : 367959,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/albert-tate.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/blue-play-arrow.png" : {
+      "ft" : 32768,
+      "iS" : 9184,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/blue-play-arrow.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/confident-parenting.png" : {
+      "ft" : 32768,
+      "iS" : 1103199,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/confident-parenting.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/doug-fields.jpg" : {
+      "ft" : 16384,
+      "iS" : 17742,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/doug-fields.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/explore-courses.png" : {
+      "ft" : 32768,
+      "iS" : 922951,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/explore-courses.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/homeword-license.png" : {
+      "ft" : 32768,
+      "iS" : 833401,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/homeword-license.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/jim-burns.jpg" : {
+      "ft" : 16384,
+      "iS" : 24875,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/jim-burns.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/slide-1.png" : {
+      "ft" : 32768,
+      "iS" : 1103199,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/slide-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/slide-2.png" : {
+      "ft" : 32768,
+      "iS" : 1056839,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/slide-2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/slide-3.png" : {
+      "ft" : 32768,
+      "iS" : 965334,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/slide-3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/testimonial-1.png" : {
+      "ft" : 32768,
+      "iS" : 363403,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/testimonial-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_i\/_homeword-plus\/testimonial-2.png" : {
+      "ft" : 32768,
+      "iS" : 346835,
+      "oA" : 0,
+      "oAP" : "\/_i\/_homeword-plus\/testimonial-2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/_i\/amex.png" : {
       "ft" : 32768,
       "iS" : 6415,
@@ -4949,6 +5481,14 @@
       "oAP" : "\/footer-famnetwork.php",
       "oF" : 0
     },
+    "\/footer-homeword-plus.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/footer-homeword-plus.php",
+      "oF" : 0
+    },
     "\/footer-intentional-blank.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -5016,6 +5556,14 @@
       "oAP" : "\/header-famnetwork.php",
       "oF" : 0
     },
+    "\/header-homeword-plus.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/header-homeword-plus.php",
+      "oF" : 0
+    },
     "\/header-intentional.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -5046,6 +5594,26 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/header.php",
+      "oF" : 0
+    },
+    "\/homewordplus.css" : {
+      "aP" : 0,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/homewordplus-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/homewordplus.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/homewordplus.css.map",
       "oF" : 0
     },
     "\/ie.css" : {
@@ -5201,12 +5769,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/node_modules",
-      "oF" : 0
-    },
     "\/oldtaxonomy-type.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -5234,6 +5796,14 @@
       "oAP" : "\/one-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
     },
     "\/package.json" : {
       "ft" : 524288,
@@ -5313,6 +5883,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-home.php",
+      "oF" : 0
+    },
+    "\/page-homeword-plus.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/page-homeword-plus.php",
       "oF" : 0
     },
     "\/page-intentional-blank.php" : {

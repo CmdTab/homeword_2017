@@ -2,6 +2,9 @@
 	@if $point == 80 {
 		@media (min-width: 80em) { @content; }
 	}
+	@else if $point == 67.5 {
+		@media (min-width: 67.5em) { @content; }
+	}
 	@else if $point == 62.5 {
 		@media (min-width: 62.5em) { @content; }
 	}
@@ -19,7 +22,6 @@
 	}
 }
 
-
 /*Clearfix*/
 .group:before,
 .group:after {
@@ -32,12 +34,14 @@
 .group {
 	zoom:1;
 }
+
 /*Box-sizing*/
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 /*Responsive Images*/
 img {
 	max-width: 100%;
@@ -49,36 +53,30 @@ img {
 	top: -9999px;
 	left: -9999px;
 }
-/* Alignment */
-.alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
-}
-.alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
-}
-.aligncenter {
-	clear: both;
-	display: block;
-	margin: 0 auto;
-}
 
 @mixin button($back-color, $text-color, $border-color) {
 	display: inline-block;
-	padding: 0.5em 1.5em;
-	font-size: 0.875em;
-	font-weight: normal;
-	text-transform: uppercase;
-	color: $text-color;
-	letter-spacing: 1px;
 	background-color: $back-color;
 	border: 1px solid $border-color;
+	color: $text-color;
+	line-height: 1.1em;
 	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	font-size: 1.1em;
+    padding: 1.25em 1.8em;
+	border-radius: 3em;
+	transition: transform 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+	transform-style: preserve-3d;
 	&:hover {
 		color: $text-color;
 		background: darken($back-color, 10%);
+		border-color: darken($border-color, 10%);
+		transform: scale3d(0.96, 0.96, 1.01);
+	}
+
+	@include bp(62.5) {
+		font-size: 0.9em;
+		padding: 1.4em 2.15em;
 	}
 }
