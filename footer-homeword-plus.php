@@ -160,6 +160,74 @@
 			e.preventDefault();
 			menu.classList.toggle('visible');
 		});
+
+
+	//scrolling script
+	const scrollElements = document.querySelectorAll(".scroll-js");
+
+	const elementInView = (el, dividend = 1) => {
+		const elementTop = el.getBoundingClientRect().top;
+
+		return (
+			elementTop <=
+				(window.innerHeight || document.documentElement.clientHeight) / dividend
+			);
+	};
+
+	const elementOutofView = (el) => {
+		const elementTop = el.getBoundingClientRect().top;
+
+		return (
+			elementTop > (window.innerHeight || document.documentElement.clientHeight)
+			);
+	};
+
+	const displayScrollElement = (element) => {
+	element.classList.add("scrolled");
+	};
+
+	const hideScrollElement = (element) => {
+	element.classList.remove("scrolled");
+	};
+
+	const handleScrollAnimation = () => {
+	scrollElements.forEach((el) => {
+	if (elementInView(el, 1.25)) {
+		displayScrollElement(el);
+	} else if (elementOutofView(el)) {
+		hideScrollElement(el)
+	}
+	})
+	}
+
+	window.addEventListener("scroll", () => { 
+	handleScrollAnimation();
+	});
+
+
+    function overlayVideo () {
+		var beginEmbed = '<iframe src="https://player.vimeo.com/video/';
+		var endEmbed = '?&amp;autoplay=1" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+		jQuery('a[data-video]').click(function (e) {
+			var videoID = jQuery(this).data('video');
+			var videoEmbed = beginEmbed + videoID + endEmbed;
+			jQuery('.overlay-video').html(videoEmbed);
+			jQuery('.overlay-content').addClass('overlay-show');
+			e.preventDefault();
+		});
+    }
+    jQuery(document).ready(function() {
+        overlayVideo();
+		jQuery('.overlay-close').click(function(e) {
+			e.preventDefault();
+			jQuery('.overlay-content').removeClass('overlay-show');
+			jQuery('.overlay-video').html('');
+		});
+		jQuery('.tooltip').click(function(e) {
+			e.preventDefault();
+			jQuery(this).toggleClass('visible');
+		});
+    });
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

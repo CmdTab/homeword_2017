@@ -111,3 +111,50 @@
         }
     }
 }
+.tooltip {
+    position: relative;
+    white-space: nowrap;
+    span {
+        display: block;
+        opacity: 0;
+        transition: opacity 200ms linear;
+        position: absolute;
+        bottom: calc( 100% + 0.25em);
+        left: -3em;
+        width: 18em;
+        font-size: 0.75em;
+        color: #fff;
+        background: #333;
+        font-weight: normal;
+        line-height: 1.1;
+        padding: 0.5em 1em;
+        border-radius: 0.25em;
+        white-space: normal;
+        &:after {
+            content: '';
+            display: block;
+            height: 0;
+            width: 0;
+            border-top: 0.5em solid #333;
+            border-right: 0.5em solid transparent;
+            border-left: 0.5em solid transparent;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            margin-left: -0.5em;
+        }
+    }
+    @include bp(50) {
+        &:hover {
+            span {
+                opacity: 1;
+            }
+        }
+    }
+    
+    &.visible {
+        span {
+            opacity: 1;
+        }
+    }
+}

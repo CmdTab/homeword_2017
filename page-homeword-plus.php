@@ -50,7 +50,7 @@ get_header('homeword-plus'); ?>
 							</div>
 							<span>
 								<h3>Courses by Dr. Jim Burns</h3>
-								<p>There are 18 courses in marriage, parenting, and personal life relationships (including 3 in Spanish) at your fingertips for everyone in your church to watch at their convenience. Each course includes a <a href="#">downloadable PDF</a> to help you follow along.</p>
+								<p>There are 18 courses in marriage, parenting, and personal life relationships (including 3 in Spanish) at your fingertips for everyone in your church to watch at their convenience. Each course includes a <a href="#" class="tooltip">downloadable PDF<span>We've created a downloadable PDF to help you process and personalize the content of these courses.</span></a> to help you follow along.</p>
 							</span>
 						</li>
 						<li>
@@ -120,7 +120,7 @@ get_header('homeword-plus'); ?>
 				</ul>
 			</div>
 		</div>
-		<div class="arrow">
+		<div class="arrow scroll-js">
 			<span class="assistive-text">Orange arrow pointing down</span>
 			<?php include( TEMPLATEPATH . '/_i/_homeword-plus/_svg/icon-orange-arrow.php'); ?>
 		</div>
@@ -145,7 +145,7 @@ get_header('homeword-plus'); ?>
 					$desc = get_sub_field('desc');
 					$instructor = get_sub_field('instructor');
 					$instructor_image = get_sub_field('instructor_image');
-					$preview_url = get_sub_field('preview_url');
+					$preview_vid = get_sub_field('preview');
 				?>
 
 					<div class="swiper-slide slider--slide">
@@ -174,8 +174,8 @@ get_header('homeword-plus'); ?>
 								</div>
 
 								<div class="slider--preview">
-									<?php if ($preview_url) { ?>
-										<a href="<?php echo $preview_url; ?>">
+									<?php if ($preview_vid) { ?>
+										<a data-video="<?php echo $preview_vid; ?>" href="#">
 											<img src="<?php bloginfo('template_directory'); ?>/_i/_homeword-plus/blue-play-arrow.png" />
 											Preview
 										</a>
@@ -185,7 +185,7 @@ get_header('homeword-plus'); ?>
 
 						</div>
 					</div>
-
+					
 				<?php endwhile; ?>
 
 				</div>
@@ -226,7 +226,7 @@ get_header('homeword-plus'); ?>
 				</div>
 			</div>
 		</div>
-		<div class="arrow yellow">
+		<div class="arrow yellow scroll-js">
 			<span class="assistive-text">Yellow arrow pointing down</span>
 			<?php include( TEMPLATEPATH . '/_i/_homeword-plus/_svg/icon-yellow-arrow.php'); ?>
 		</div>
@@ -281,19 +281,19 @@ get_header('homeword-plus'); ?>
 			</div>
 			<div class="grid-list">
 				<ul>
-					<li>
+					<li class="scroll-js">
 						<h3>Churches less than 500:</h3>
 						<span class="price">$69/month</span>
 						<p>Unlimited Access for Churches or Organizations under 500.</p>
 						<a href="#" class="btn">Add to Cart</a>
 					</li>
-					<li>
+					<li class="scroll-js">
 						<h3>Churches more than 500:</h3>
 						<span class="price">$89/month</span>
 						<p>Unlimited Access for Churches or Organizations over 500.</p>
 						<a href="#" class="btn">Add to Cart</a>
 					</li>
-					<li>
+					<li class="scroll-js">
 						<h3>Individual Courses</h3>
 						<span class="price">$89/course</span>
 						<p>Individuals can purchase unlimited access to any course.</p>
@@ -340,6 +340,11 @@ get_header('homeword-plus'); ?>
 			<?php endif; ?>
 		</div>
 	</div>
-
+	<div class="overlay-content">
+		<a href = "#" class="overlay-close">&times;</a>
+		<div class="overlay-video">
+		</div>
+	</div>
+	<div class="overlay"></div>
 
 <?php get_footer('homeword-plus'); ?>

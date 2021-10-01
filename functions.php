@@ -169,7 +169,7 @@ function homeword_scripts() {
 	}
 	if(is_page_template( 'page-homeword-plus.php' ) ) {
 		wp_dequeue_style('homeword-style');
-		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/homewordplus.css' );
+		wp_enqueue_style( 'plus-style', get_template_directory_uri() . '/homewordplus.css' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'homeword_scripts' );

@@ -7,11 +7,12 @@
       "uuidString" : "DFA35266-D265-4D60-B797-5A20E653749D"
     }
   ],
-  "creatorBuild" : "34127",
+  "creatorBuild" : "34214",
   "files" : {
     "\/_doing_life\/_bits.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -26,6 +27,7 @@
     "\/_doing_life\/benefits.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -40,6 +42,7 @@
     "\/_doing_life\/footer.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -54,6 +57,7 @@
     "\/_doing_life\/header.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -68,6 +72,7 @@
     "\/_doing_life\/instructor.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -82,6 +87,7 @@
     "\/_doing_life\/life-base.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -96,6 +102,7 @@
     "\/_doing_life\/modules.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -110,6 +117,7 @@
     "\/_doing_life\/normalize.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -124,6 +132,7 @@
     "\/_doing_life\/pricing.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -138,6 +147,7 @@
     "\/_doing_life\/sessions.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -152,6 +162,7 @@
     "\/_doing_life\/small.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -166,6 +177,7 @@
     "\/_doing_life\/testimonials.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -180,6 +192,7 @@
     "\/_doing_life\/var.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -562,6 +575,7 @@
     "\/_famnetwork\/base.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -576,6 +590,7 @@
     "\/_famnetwork\/bits.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -595,7 +610,7 @@
       "oA" : 1,
       "oAP" : "\/_famnetwork\/min\/bootstrap-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_famnetwork\/famnetwork-min.js" : {
@@ -606,7 +621,7 @@
       "oA" : 1,
       "oAP" : "\/_famnetwork\/min\/famnetwork-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_famnetwork\/famnetwork.js" : {
@@ -617,12 +632,13 @@
       "oA" : 0,
       "oAP" : "\/_famnetwork\/famnetwork-min.js",
       "oF" : 2,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_famnetwork\/flip-card.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -637,6 +653,7 @@
     "\/_famnetwork\/footer.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -651,6 +668,7 @@
     "\/_famnetwork\/get-connected.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -665,6 +683,7 @@
     "\/_famnetwork\/header.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -679,6 +698,7 @@
     "\/_famnetwork\/join-free.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -698,7 +718,7 @@
       "oA" : 0,
       "oAP" : "\/_famnetwork\/min\/jquery.bxslider-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_famnetwork\/jquery.fitvids.js" : {
@@ -709,7 +729,7 @@
       "oA" : 0,
       "oAP" : "\/_famnetwork\/min\/jquery.fitvids-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_famnetwork\/jquery.matchHeight.js" : {
@@ -720,7 +740,7 @@
       "oA" : 0,
       "oAP" : "\/_famnetwork\/min\/jquery.matchHeight-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_famnetwork\/jquery.waypoints.js" : {
@@ -731,12 +751,13 @@
       "oA" : 1,
       "oAP" : "\/_famnetwork\/min\/jquery.waypoints-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_famnetwork\/modules.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -751,6 +772,7 @@
     "\/_famnetwork\/normalize.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -765,6 +787,7 @@
     "\/_famnetwork\/resources.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -779,6 +802,7 @@
     "\/_famnetwork\/upgrade-premium.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -793,6 +817,7 @@
     "\/_famnetwork\/var.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -807,6 +832,7 @@
     "\/_famnetwork\/we-believe.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -887,8 +913,9 @@
       "oF" : 0
     },
     "\/_homewordplus\/base.scss" : {
-      "aP" : 1,
+      "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -896,13 +923,14 @@
       "oA" : 0,
       "oAP" : "\/homewordplus.css",
       "oF" : 2,
-      "oS" : 0,
+      "oS" : 3,
       "pg" : 0,
       "sct" : 1
     },
     "\/_homewordplus\/bits.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -917,6 +945,7 @@
     "\/_homewordplus\/footer.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -931,6 +960,7 @@
     "\/_homewordplus\/header.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -945,6 +975,7 @@
     "\/_homewordplus\/modules.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -959,6 +990,7 @@
     "\/_homewordplus\/normalize.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -970,9 +1002,25 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/_homewordplus\/overlay.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 5,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/overlay.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/_homewordplus\/section-1.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -987,6 +1035,7 @@
     "\/_homewordplus\/section-2.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -1001,6 +1050,7 @@
     "\/_homewordplus\/section-3.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -1015,6 +1065,7 @@
     "\/_homewordplus\/section-4.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -1029,6 +1080,7 @@
     "\/_homewordplus\/section-5.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -1043,6 +1095,7 @@
     "\/_homewordplus\/section-6.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -1057,6 +1110,7 @@
     "\/_homewordplus\/section-7.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -1071,6 +1125,7 @@
     "\/_homewordplus\/section-8.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -1085,6 +1140,7 @@
     "\/_homewordplus\/testimonials.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -1099,6 +1155,7 @@
     "\/_homewordplus\/var.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3492,6 +3549,7 @@
     "\/_intentional\/base.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3506,6 +3564,7 @@
     "\/_intentional\/bits.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3520,6 +3579,7 @@
     "\/_intentional\/download.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3534,6 +3594,7 @@
     "\/_intentional\/footer.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3548,6 +3609,7 @@
     "\/_intentional\/header.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3567,7 +3629,7 @@
       "oA" : 1,
       "oAP" : "\/_intentional\/min\/intentional-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_intentional\/intentional.js" : {
@@ -3578,7 +3640,7 @@
       "oA" : 0,
       "oAP" : "\/_intentional\/intentional-min.js",
       "oF" : 2,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_intentional\/jquery.bxslider.js" : {
@@ -3600,7 +3662,7 @@
       "oA" : 1,
       "oAP" : "\/_intentional\/min\/jquery.fitvids-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_intentional\/jquery.matchHeight.js" : {
@@ -3611,7 +3673,7 @@
       "oA" : 1,
       "oAP" : "\/_intentional\/min\/jquery.matchHeight-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_intentional\/jquery.waypoints.js" : {
@@ -3622,12 +3684,13 @@
       "oA" : 1,
       "oAP" : "\/_intentional\/min\/jquery.waypoints-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_intentional\/modules.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3642,6 +3705,7 @@
     "\/_intentional\/normalize.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3656,6 +3720,7 @@
     "\/_intentional\/paths.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3670,6 +3735,7 @@
     "\/_intentional\/quiz.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3684,6 +3750,7 @@
     "\/_intentional\/store.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3698,6 +3765,7 @@
     "\/_intentional\/var.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3712,6 +3780,7 @@
     "\/_intentional\/video.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3726,6 +3795,7 @@
     "\/_intentional\/who.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3740,6 +3810,7 @@
     "\/_intentional\/why.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -3759,7 +3830,7 @@
       "oA" : 0,
       "oAP" : "\/_js\/min\/doing-life-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/doing-life.js" : {
@@ -3781,7 +3852,7 @@
       "oA" : 0,
       "oAP" : "\/_js\/min\/donation-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/donation.js" : {
@@ -3792,7 +3863,7 @@
       "oA" : 0,
       "oAP" : "\/_js\/donation-min.js",
       "oF" : 2,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/functions.js" : {
@@ -3814,7 +3885,7 @@
       "oA" : 0,
       "oAP" : "\/_js\/min\/html5shiv-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/libs\/bootstrap.js" : {
@@ -3836,7 +3907,7 @@
       "oA" : 1,
       "oAP" : "\/_js\/libs\/min\/fitvids-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/libs\/jquery.cookie.js" : {
@@ -3858,7 +3929,7 @@
       "oA" : 1,
       "oAP" : "\/_js\/libs\/min\/tinyslider-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/min\/doing-life-min.js" : {
@@ -3869,7 +3940,7 @@
       "oA" : 0,
       "oAP" : "\/_js\/min\/min\/doing-life-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/min\/functions-min.js" : {
@@ -3880,7 +3951,7 @@
       "oA" : 1,
       "oAP" : "\/_js\/min\/min\/functions-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/min\/production-min.js" : {
@@ -3891,7 +3962,7 @@
       "oA" : 1,
       "oAP" : "\/_js\/min\/min\/production-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/production-min.js" : {
@@ -3902,7 +3973,7 @@
       "oA" : 1,
       "oAP" : "\/_js\/min\/production-min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/production.js" : {
@@ -3913,7 +3984,7 @@
       "oA" : 0,
       "oAP" : "\/_js\/production.min.js",
       "oF" : 2,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_js\/production.min.js" : {
@@ -3924,7 +3995,7 @@
       "oA" : 1,
       "oAP" : "\/_js\/min\/production.min-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/_one\/.sass-cache\/95c6af56ea80c7ba616b910d2d3c5e529e5432cd\/about.scssc" : {
@@ -4018,6 +4089,7 @@
     "\/_one\/about.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4032,6 +4104,7 @@
     "\/_one\/base.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4046,6 +4119,7 @@
     "\/_one\/bits.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4060,6 +4134,7 @@
     "\/_one\/facts.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4074,6 +4149,7 @@
     "\/_one\/goals.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4088,6 +4164,7 @@
     "\/_one\/modules.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4102,6 +4179,7 @@
     "\/_one\/normalize.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4116,6 +4194,7 @@
     "\/_one\/plan.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4130,6 +4209,7 @@
     "\/_one\/stages.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4144,6 +4224,7 @@
     "\/_one\/title.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4158,6 +4239,7 @@
     "\/_one\/var.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4772,6 +4854,7 @@
     "\/_scss\/about.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4786,6 +4869,7 @@
     "\/_scss\/account.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4800,6 +4884,7 @@
     "\/_scss\/archives.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4814,6 +4899,7 @@
     "\/_scss\/area-pages.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4828,6 +4914,7 @@
     "\/_scss\/article.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4842,6 +4929,7 @@
     "\/_scss\/base.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4856,6 +4944,7 @@
     "\/_scss\/bits.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4870,6 +4959,7 @@
     "\/_scss\/card.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4884,6 +4974,7 @@
     "\/_scss\/carousel.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4898,6 +4989,7 @@
     "\/_scss\/cart.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4912,6 +5004,7 @@
     "\/_scss\/checkout.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4926,6 +5019,7 @@
     "\/_scss\/comments.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4940,6 +5034,7 @@
     "\/_scss\/donate.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4954,6 +5049,7 @@
     "\/_scss\/feature-tabs.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4968,6 +5064,7 @@
     "\/_scss\/fonts.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4982,6 +5079,7 @@
     "\/_scss\/footer.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -4996,6 +5094,7 @@
     "\/_scss\/forms.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5010,6 +5109,7 @@
     "\/_scss\/header.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5024,6 +5124,7 @@
     "\/_scss\/home-products.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5038,6 +5139,7 @@
     "\/_scss\/home.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5052,6 +5154,7 @@
     "\/_scss\/newsletter.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5066,6 +5169,7 @@
     "\/_scss\/normalize.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5080,6 +5184,7 @@
     "\/_scss\/opc.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5094,6 +5199,7 @@
     "\/_scss\/pci.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5108,6 +5214,7 @@
     "\/_scss\/popup.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5122,6 +5229,7 @@
     "\/_scss\/regular-tabs.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5136,6 +5244,7 @@
     "\/_scss\/sidebar.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5150,6 +5259,7 @@
     "\/_scss\/snippets.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5164,6 +5274,7 @@
     "\/_scss\/store.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5178,6 +5289,7 @@
     "\/_scss\/var.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 5,
       "ec" : 1,
       "ft" : 4,
@@ -5537,7 +5649,7 @@
       "oA" : 0,
       "oAP" : "\/min\/Gruntfile-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/header-download.php" : {
@@ -5704,7 +5816,7 @@
       "oA" : 0,
       "oAP" : "\/js\/min\/customizer-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/js\/navigation.js" : {
@@ -5715,7 +5827,7 @@
       "oA" : 0,
       "oAP" : "\/js\/min\/navigation-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/js\/skip-link-focus-fix.js" : {
@@ -5726,7 +5838,7 @@
       "oA" : 0,
       "oAP" : "\/js\/min\/skip-link-focus-fix-min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/languages\/homeword.pot" : {
@@ -7555,7 +7667,8 @@
         "optionString" : ""
       },
       "no-multi-assign" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'ignoreNonDeclaration': false}"
       },
       "no-multi-spaces" : {
         "active" : 0,
@@ -7678,7 +7791,8 @@
         "active" : 1
       },
       "no-sequences" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowInParentheses': true}"
       },
       "no-setter-return" : {
         "active" : 1
@@ -8042,354 +8156,6 @@
     "gitIgnoreBuildFolder" : 1,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
-    "jsHintFlags2" : {
-      "asi" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "bitwise" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "boss" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "browserify" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camelcase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "curly" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "debug" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "dojo" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "elision" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqeqeq" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqnull" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es3" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "esnext" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "evil" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "expr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "forin" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "freeze" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "funcscope" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "futurehostile" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "globalstrict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "immed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "indent" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "iterator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jasmine" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jquery" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "lastsemic" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "latedef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "laxbreak" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "laxcomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "loopfunc" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxcomplexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "maxdepth" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "maxparams" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxstatements" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "mocha" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "mootools" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "moz" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "multistr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newcap" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noarg" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nocomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "noempty" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonbsp" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonew" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nonstandard" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "notypeof" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noyield" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "onecase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "phantom" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "proto" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prototypejs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "qunit" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "regexp" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "rhino" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "scripturl" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shadow" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shelljs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "singleGroups" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "strict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "sub" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "supernew" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "typed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "undef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "unused" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "varstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "withstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "worker" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "wsh" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "yui" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
-    "jsLintFlags2" : {
-      "bitwise" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es6" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "eval" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "for" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "white" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
     "languageDefaultsCOFFEE" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.js",
@@ -8465,7 +8231,7 @@
       "bundleFormat" : 0,
       "minifierStyle" : 1,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 3,
       "transpilerStyle" : 0
     },
     "languageDefaultsJSON" : {
@@ -8698,6 +8464,7 @@
     "tsEmitBOM" : 0,
     "tsEmitDecoratorMetadata" : 0,
     "tsESModuleInterop" : 0,
+    "tsExactOptionalPropertyTypes" : 0,
     "tsForceConsistentCasingInFileNames" : 0,
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
@@ -8706,6 +8473,7 @@
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
+    "tsNoImplicitOverride" : 0,
     "tsNoImplicitReturns" : 0,
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
@@ -8726,6 +8494,7 @@
     "tsStripInternal" : 0,
     "tsSuppressExcessPropertyErrors" : 0,
     "tsSuppressImplicitAnyIndexErrors" : 0,
+    "tsUseUnknownInCatchVariables" : 0,
     "uglifyDefinesString" : "",
     "uglifyFlags2" : {
       "arguments" : {

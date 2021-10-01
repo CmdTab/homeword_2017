@@ -220,21 +220,28 @@ Example showing how to change the color/size of the icons:
 	position: absolute;
     left: 0;
     right: 0;
-    bottom: -5.8em;
+    bottom: -3em;
     text-align: center;
     z-index: 10;
     max-width: 3.5em;
     margin: 0 auto;
-
+	opacity: 0;
+	transition: all 500ms linear;
+	&.scrolled {
+		opacity: 1;
+		bottom: -5.8em;
+		@include bp(44) {
+			bottom: -7.25em;
+		}
+		&.yellow {
+			@include bp(44) {
+				bottom: -4.5em;
+			}
+		}
+	}
 	@include bp(44) {
 		max-width: 4.5em;
-		bottom: -7.25em;
-	}
-
-	&.yellow {
-		@include bp(44) {
-			bottom: -4.5em;
-		}
+		
 	}
 }
 
@@ -282,3 +289,4 @@ Example showing how to change the color/size of the icons:
 @import "section-7";
 @import "section-8";
 @import "footer";
+@import "overlay";

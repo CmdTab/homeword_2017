@@ -89,7 +89,7 @@
     }
 
     &--preview {
-        button {
+        [data-video] {
             @include button($blue-sky, $blue-lt, $blue-sky);
             font-weight: 500;
             text-transform: none;
